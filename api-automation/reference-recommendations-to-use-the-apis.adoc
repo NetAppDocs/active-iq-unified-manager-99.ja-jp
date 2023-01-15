@@ -1,0 +1,28 @@
+---
+permalink: api-automation/reference-recommendations-to-use-the-apis.html 
+sidebar: sidebar 
+keywords:  
+summary: Active IQ Unified Manager で API を使用するときは、特定の推奨される方法に従ってください。 
+---
+= Active IQ Unified Manager で API を使用する際の推奨事項です
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager で API を使用するときは、特定の推奨される方法に従ってください。
+
+* 有効に実行するには、すべての応答コンテンツタイプが次の形式である必要があります。
+
+
+[listing]
+----
+application/json
+----
+* API のバージョン番号は、製品のバージョン番号とは関係ありません。Unified Manager インスタンスで使用可能な最新バージョンの API を使用する必要があります。Unified Manager API のバージョンの詳細については、「 Active IQ Unified Manager での ST API のバージョン管理」を参照してください。
+* Unified Manager API を使用して配列値を更新する場合は、値の文字列全体を更新する必要があります。配列に値を付加することはできません。既存のアレイのみを交換できます。
+* 指標APIのIOPSやパフォーマンスなど、二重値を除き、すべてのクエリパラメータにパイプ（|）やワイルドカード（*）などのフィルタ演算子を使用できます。フィルタ演算子のワイルドカード（*）とパイプ（|）を組み合わせてオブジェクトを照会しないでください。間違った数のオブジェクトが取得される可能性があります。
+* を参照してください `GET` （all）APIに対する要求は、最大1000レコードを返します。を設定してクエリを実行した場合も同様です `max_records` パラメータを1000より大きい値に設定すると、1000レコードのみが返されます。
+* 管理機能を実行する場合は、 Unified Manager UI を使用することを推奨します。
+

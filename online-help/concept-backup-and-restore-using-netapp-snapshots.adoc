@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-backup-and-restore-using-netapp-snapshots.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp Snapshot バックアップは、システム障害やデータ損失が発生した場合にリストアに使用できる Unified Manager データベースと構成ファイルのポイントインタイムイメージを作成します。Snapshot バックアップをいずれかの ONTAP クラスタ上のボリュームに定期的に書き込まれるようにスケジュールして、常に最新のコピーを保持します。 
+---
+= NetApp Snapshot を使用したバックアップとリストア
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Snapshot バックアップは、システム障害やデータ損失が発生した場合にリストアに使用できる Unified Manager データベースと構成ファイルのポイントインタイムイメージを作成します。Snapshot バックアップをいずれかの ONTAP クラスタ上のボリュームに定期的に書き込まれるようにスケジュールして、常に最新のコピーを保持します。
+
+[NOTE]
+====
+この機能は、仮想アプライアンスにインストールされている Active IQ Unified Manager では使用できません。
+
+====

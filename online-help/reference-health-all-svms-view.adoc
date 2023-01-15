@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-health-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Health：All Storage VMs]ビューでは、監視しているStorage Virtual Machine（SVM）に関する詳細情報を表示できます。 
+---
+= Health：すべてのStorage VMビュー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Health：All Storage VMビューでは、監視しているStorage Virtual Machine（SVM）に関する詳細情報を表示できます。
+
+ビューページ内のオブジェクトは、デフォルトでは、イベントの重大度に基づいてソートされます。重大イベントが報告されたオブジェクトが最初に表示され、そのあとに警告イベントが報告されたオブジェクトが表示されます。これにより、対処が必要な問題を簡単に特定できます。Storage VMグリッド内の各Storage VMには、ONTAP System Managerへのリンクがあります。このリンクをクリックすると、ONTAP System Managerで同じ保護関係が表示されます。
+
+ページの上部にあるコントロールを使用すると、特定のビュー（健常性、パフォーマンス、容量など）の選択、特定のオブジェクトの検索、フィルタの作成と適用による表示データのリストの絞り込み、ページの列の追加と削除/並べ替え、ページ上のデータをにエクスポートします `.csv`、 `.pdf`または `.xlsx` ファイル。カスタマイズしたページをカスタムビューとして保存し、データのレポートを定期的に生成して E メールで送信するようにスケジュール設定できます。
+
+SVMを事前定義されたアノテーションに関連付けるには、* Annotate *ボタンを使用します。
+
+を参照してください xref:reference-svm-health-fields.adoc[SVMの健全性フィールド] このページ上のすべてのフィールドの説明については、を参照してください。

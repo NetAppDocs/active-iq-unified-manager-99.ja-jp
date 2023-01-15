@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-active-events-from-the-notification-bell.html 
+sidebar: sidebar 
+keywords: notification bell 
+summary: メニューバーの通知ベル（\）を使用すると、Unified Managerが追跡している最も重要なアクティブイベントを簡単に確認できます。 
+---
+= 通知ベルからのアクティブイベントの表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通知ベル（image:../media/notification-bell.png[""]）をクリックすると、 Unified Manager が追跡している最も重要なアクティブイベントを簡単に確認できます。
+
+
+
+== このタスクについて
+
+アクティブイベントのリストでは、すべてのクラスタの重大イベント、エラーイベント、警告イベント、アップグレードイベントの総数を確認できます。このリストには過去 7 日間のイベントが含まれ、情報イベントは含まれません。リンクをクリックすると、関心のあるイベントのリストを表示できます。
+
+クラスタが到達不能な場合は、 Unified Manager がその情報をこのページに表示します。到達不能なクラスタに関する詳細情報を表示するには、 * Details * ボタンをクリックします。この操作により、 [ イベントの詳細 ] ページが開きます。このページには、管理ステーションの容量不足や RAM などのスケール監視の問題も表示されます。
+
+
+
+== 手順
+
+. メニューバーでをクリックします image:../media/notification-bell.png[""]。
+. アクティブなイベントの詳細を表示するには'イベント・テキスト・リンクをクリックしますたとえば'2 Capacity]や'4 Performanceなどです
+

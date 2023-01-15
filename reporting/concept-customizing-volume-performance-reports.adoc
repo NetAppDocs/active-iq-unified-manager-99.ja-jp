@@ -1,0 +1,14 @@
+---
+permalink: reporting/concept-customizing-volume-performance-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 以下に記載するサンプルのカスタムレポートを使用して、ボリュームのパフォーマンスに関連する潜在的な問題を特定して対処することができます。 
+---
+= ボリュームパフォーマンスレポートのカスタマイズ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下に記載するサンプルのカスタムレポートを使用して、ボリュームのパフォーマンスに関連する潜在的な問題を特定して対処することができます。

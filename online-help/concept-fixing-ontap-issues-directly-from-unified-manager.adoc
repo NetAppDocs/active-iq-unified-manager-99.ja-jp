@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-fixing-ontap-issues-directly-from-unified-manager.html 
+sidebar: sidebar 
+keywords: fix it,fix all 
+summary: ONTAP の一部の問題については、 ONTAP System Manager や ONTAP CLI を使用する代わりに、 Unified Manager ユーザインターフェイスから直接修正することができます。「管理操作」オプションでは、 Unified Manager イベントをトリガーした ONTAP のさまざまな問題を修正できます。 
+---
+= ONTAP の問題を Unified Manager から直接修正
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP の一部の問題については、 ONTAP System Manager や ONTAP CLI を使用する代わりに、 Unified Manager ユーザインターフェイスから直接修正することができます。「管理操作」オプションは、 Unified Manager イベントをトリガーした ONTAP のさまざまな問題に対する修正を提供します。
+
+左側のナビゲーションペインで * 管理操作 * オプションを選択すると、管理操作ページから直接問題を修正できます。管理操作は、ダッシュボードの管理操作パネル、イベントの詳細ページ、および左側のナビゲーションメニューのワークロード分析からも実行できます。
+
+問題によっては、 Unified Manager の詳細な診断によって 1 つの解決策が提供されることがあります。解決策がある場合は、 [ 管理アクション ] の [ * 修正 ] ボタンで表示されます。[* Fix it* （修正） ] ボタンをクリックして、問題を修正します。アプリケーション管理者またはストレージ管理者のロールが必要です。
+
+Unified Manager からクラスタに ONTAP コマンドが送信され、要求された修正が実行されます。修正が完了すると、イベントは廃止状態になります。
+
+一部の管理操作では、 * すべて修正 * ボタンを使用して、複数のストレージオブジェクトで同じ問題を修正できます。たとえば'Volume Space Full'イベントを含む5つのボリュームがあり'これを解決するには'Enable volume autogrow'の*Fix All *管理アクションをクリックしますワンクリックで、この問題を 5 つのボリュームで修正できます。

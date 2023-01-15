@@ -1,0 +1,323 @@
+---
+section: health-checker
+title: クラスタヘルスを監視および管理する
+entries:
+- title: Active IQ Unified Manager の健常性監視の概要
+  url: "/health-checker/concept-introduction-to-unified-manager-health-monitoring.html"
+  entries:
+  - title: Unified Manager の健常性監視機能
+    url: "/health-checker/concept-unified-manager-health-monitoring-features.html"
+  - title: ストレージシステムの健常性を管理するために使用される Unified Manager のインターフェイス
+    url: "/health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html"
+  - title: Active IQ Unified Manager 製品ドキュメント
+    url: "/health-checker/reference-oncommand-unified-manager-product-documentation.html"
+- title: Unified Manager の一般的な健常性関連のワークフローとタスク
+  url: "/health-checker/concept-common-unified-manager-administrative-workflows-and-tasks.html"
+  entries:
+  - title: データの可用性の監視とトラブルシューティング
+    url: "/health-checker/concept-monitoring-and-troubleshooting-data-availability.html"
+    entries:
+    - title: ストレージフェイルオーバーインターコネクトリンクの停止状態をスキャンして解決しています
+      url: "/health-checker/task-resolving-a-storage-failover-interconnect-link-down-condition.html"
+      entries:
+      - title: ストレージフェイルオーバーインターコネクトリンクが停止した場合の対処策の実施
+        url: "/health-checker/task-performing-corrective-action-for-storage-failover-interconnect-links-down.html"
+    - title: ボリュームのオフライン状態の問題を解決する
+      url: "/health-checker/task-resolving-volume-offline-issues.html"
+      entries:
+      - title: ボリュームがオフライン状態になった場合の診断処置の実施
+        url: "/health-checker/task-performing-diagnotstic-actions-for-volume-offline-conditions.html"
+        entries:
+        - title: ボリュームのオフライン状態の原因がホストノードの停止であるかどうかを判別します
+          url: "/health-checker/task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.html"
+        - title: ボリュームのオフライン状態とその SVM の停止の原因がノードの停止であるかどうかの判別
+          url: "/health-checker/task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.html"
+        - title: ボリュームのオフライン状態の原因がアグリゲート内の破損ディスクであるかどうかを判別しています
+          url: "/health-checker/task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.html"
+  - title: 容量の問題を解決する
+    url: "/health-checker/task-resolving-capacity-issues.html"
+    entries:
+    - title: ボリュームがフルになった場合の推奨修正策の実施
+      url: "/health-checker/task-performing-suggested-remedial-actions-for-a-full-volume.html"
+  - title: 健常性しきい値の管理
+    pdf-filename: 健常性しきい値の管理（クラスタ健常性）
+    url: "/health-checker/concept-managing-health-thresholds.html"
+    entries:
+    - title: ストレージ容量の健常性しきい値とは
+      url: "/health-checker/concept-what-storage-capacity-health-thresholds-are.html"
+    - title: グローバル健全性しきい値を設定します
+      pdf-filename: グローバル健全性しきい値の設定（クラスタの健常性）
+      url: "/health-checker/task-configuring-global-health-threshold-settings.html"
+      entries:
+      - title: アグリゲートのグローバル健全性しきい値を設定します
+        url: "/health-checker/task-configuring-global-aggregate-health-threshold-values.html"
+      - title: ボリュームのグローバル健全性しきい値を設定しています
+        url: "/health-checker/task-configuring-global-volume-health-threshold-values.html"
+      - title: qtree のグローバル健全性しきい値を設定しています
+        url: "/health-checker/task-configuring-global-qtree-health-threshold-values.html"
+      - title: 管理対象外の保護関係の遅延しきい値を設定しています
+        url: "/health-checker/task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.html"
+    - title: 個々のアグリゲートの健全性しきい値の設定を編集
+      url: "/health-checker/task-editing-individual-aggregate-health-threshold-settings.html"
+    - title: 個々のボリュームの健全性しきい値の設定を編集し
+      url: "/health-checker/task-editing-individual-volume-health-threshold-settings.html"
+    - title: 個々の qtree の健全性しきい値の設定を編集する
+      url: "/health-checker/task-editing-individual-qtree-health-threshold-settings.html"
+  - title: クラスタのセキュリティ目標の管理
+    pdf-filename: クラスタのセキュリティ目標の管理（クラスタヘルス）
+    url: "/health-checker/concept-managing-cluster-security-objectives.html"
+    entries:
+    - title: 評価されるセキュリティ条件
+      pdf-filename: 評価されるセキュリティ条件（クラスタの健常性）
+      url: "/health-checker/concept-what-security-criteria-is-being-evaluated.html"
+      entries:
+      - title: クラスタコンプライアンスのカテゴリ
+        url: "/health-checker/reference-cluster-compliance-categories.html"
+      - title: SVM コンプライアンスのカテゴリ
+        url: "/health-checker/reference-svm-compliance-categories.html"
+      - title: ボリュームコンプライアンスのカテゴリ
+        url: "/health-checker/reference-volume-compliance-categories.html"
+    - title: 非準拠の条件
+      url: "/health-checker/concept-what-does-not-compliant-mean.html"
+    - title: クラスタのセキュリティステータスの概要の表示
+      url: "/health-checker/task-viewing-high-level-cluster-security-status.html"
+    - title: クラスタと SVM の詳細なセキュリティステータスの表示
+      url: "/health-checker/task-viewing-detailed-security-status-for-clusters-and-svms.html"
+    - title: ソフトウェアまたはファームウェアの更新が必要なセキュリティイベントの表示
+      url: "/health-checker/task-viewing-security-events-that-may-require-software-or-firmware-updates.html"
+    - title: すべてのクラスタでのユーザ認証の管理状況の表示
+      url: "/health-checker/task-viewing-how-user-authentication-is-being-managed-on-all-clusters.html"
+    - title: すべてのボリュームの暗号化ステータスを表示します
+      url: "/health-checker/task-viewing-the-encryption-status-of-all-volumes.html"
+    - title: アクティブなすべてのセキュリティイベントを表示します
+      url: "/health-checker/task-viewing-all-security-events.html"
+    - title: セキュリティイベントのアラートを追加する
+      url: "/health-checker/task-adding-alerts-for-security-events.html"
+    - title: 特定のセキュリティイベントを無効にする
+      url: "/health-checker/task-disabling-specific-security-events.html"
+    - title: セキュリティイベント
+      url: "/health-checker/reference-security-events.html"
+  - title: バックアップとリストアの処理の管理
+    pdf-filename: バックアップ処理とリストア処理の管理（クラスタヘルス）
+    url: "/health-checker/concept-managing-backup-and-restore-operations.html"
+    entries:
+    - title: 仮想アプライアンスでの Unified Manager のバックアップとリストア
+      url: "/health-checker/concept-backup-and-restore-on-virtual-appliance.html"
+    - title: MySQL データベースダンプを使用したバックアップとリストア
+      pdf-filename: MySQLデータベースダンプを使用したバックアップとリストア（クラスタの健常性）
+      url: "/health-checker/concept-backup-and-restore-using-a-mysql-database-dump.html"
+      entries:
+      - title: データベースダンプバックアップのデスティネーションの設定とスケジュール設定
+        url: "/health-checker/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html"
+      - title: データベースリストアとは何ですか
+        url: "/health-checker/concept-what-a-database-restore-is.html"
+      - title: Linux システムでの MySQL データベースバックアップのリストア
+        url: "/health-checker/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html"
+      - title: Windows での MySQL データベースバックアップのリストア
+        url: "/health-checker/task-restoring-a-mysql-database-backup-on-windows.html"
+    - title: NetApp Snapshot を使用したバックアップとリストア
+      pdf-filename: NetApp Snapshotを使用したバックアップとリストア（クラスタの健常性）
+      url: "/health-checker/concept-backup-and-restore-using-netapp-snapshots.html"
+      entries:
+      - title: Linux でバックアップを設定しています
+        pdf-filename: Linuxでのバックアップの設定（クラスタの健常性）
+        url: "/health-checker/concept-configuring-backup-for-linux.html"
+        entries:
+        - title: Snapshot バックアップの場所を設定しています
+          url: "/health-checker/task-creating-the-volume-where-backups-are-stored.html"
+        - title: Snapshot バックアップのデスティネーションの指定
+          url: "/health-checker/task-specifying-the-destination-location-for-snapshot-backups.html"
+      - title: Windows でバックアップを設定しています
+        pdf-filename: Windowsでのバックアップの設定（クラスタの健常性）
+        url: "/health-checker/concept-configuring-backup-for-windows.html"
+        entries:
+        - title: Windows のバックアップの場所を設定しています
+          url: "/health-checker/task-configuring-the-backup-location-for-windows-snapshot-backup.html"
+        - title: ONTAP クラスタを設定しています
+          url: "/health-checker/reference-configuring-ontap-cluster.html"
+        - title: Windows ホスト・マシンを設定しています
+          url: "/health-checker/task-configuring-windows-host-machine.html"
+        - title: Windows Snapshot バックアップのデスティネーションの指定
+          url: "/health-checker/task-specifying-the-destination-location-for-windows-snapshot-backups.html"
+      - title: メンテナンスコンソールから NetApp Snapshot バックアップを設定する
+        url: "/health-checker/task-configuring-netapp-snapshot-backup-from-maintenance-console.html"
+      - title: Linux と Windows のバックアップスケジュールの定義
+        url: "/health-checker/task-defining-a-schedule-for-snapshot-backups.html"
+      - title: Linux および Windows での Snapshot バックアップのリストア
+        url: "/health-checker/task-restoring-a-snapshot-backup.html"
+      - title: バックアップタイプを変更しています
+        url: "/health-checker/task-unconfiguring-netapp-snapshot-backup.html"
+    - title: Unified Manager のオンデマンドバックアップ
+      url: "/health-checker/concept-on-demand-backup-for-unified-manger.html"
+    - title: Linux システムへの Unified Manager 仮想アプライアンスの移行
+      url: "/health-checker/task-migrating-a-unified-manager-virtual-appliance-to-a-rhel-or-centos-system.html"
+  - title: スクリプトの管理
+    pdf-filename: スクリプトの管理（クラスタの健常性）
+    url: "/health-checker/concept-managing-scripts.html"
+    entries:
+    - title: スクリプトとアラートの連携方法
+      url: "/health-checker/concept-how-scripts-work-with-alerts.html"
+    - title: スクリプトの追加
+      url: "/health-checker/task-adding-scripts.html"
+    - title: スクリプトの削除
+      url: "/health-checker/task-deleting-scripts.html"
+    - title: スクリプトの実行テスト
+      url: "/health-checker/task-testing-script-execution.html"
+  - title: グループの管理と監視
+    pdf-filename: グループの管理と監視（クラスタの健常性）
+    url: "/health-checker/concept-managing-and-monitoring-groups.html"
+    entries:
+    - title: グループの概要
+      pdf-filename: グループの概要（クラスタの健常性）
+      url: "/health-checker/concept-understanding-groups.html"
+      entries:
+      - title: グループとは
+        url: "/health-checker/concept-what-a-group-is.html"
+      - title: グループでのグループルールの仕組み
+        url: "/health-checker/concept-how-group-rules-work-for-groups.html"
+      - title: ストレージオブジェクトでのグループ操作の仕組み
+        url: "/health-checker/concept-how-group-actions-work-on-storage-objects.html"
+    - title: グループの追加
+      url: "/health-checker/task-adding-groups.html"
+    - title: グループの編集
+      url: "/health-checker/task-editing-the-group-settings.html"
+    - title: グループの削除
+      url: "/health-checker/task-deleting-groups.html"
+    - title: グループルールを追加しています
+      url: "/health-checker/task-adding-group-rules.html"
+    - title: グループルールを編集しています
+      url: "/health-checker/task-editing-group-rules.html"
+    - title: グループルールを削除しています
+      url: "/health-checker/task-deleting-group-rules.html"
+    - title: グループ操作の追加
+      url: "/health-checker/task-adding-group-actions.html"
+    - title: グループ操作を編集しています
+      url: "/health-checker/task-editing-group-actions.html"
+    - title: グループに対するボリューム健常性しきい値を設定する
+      url: "/health-checker/task-configuring-volume-health-thresholds-for-groups.html"
+    - title: グループ操作を削除しています
+      url: "/health-checker/task-deleting-group-actions.html"
+    - title: グループ操作の順序を変更する
+      url: "/health-checker/task-reordering-group-actions.html"
+  - title: アノテーションを使用したストレージオブジェクトイベントの優先順位の設定
+    url: "/health-checker/concept-prioritizing-storage-objects-using-annotations.html"
+    entries:
+    - title: アノテーションに関する詳細情報
+      url: "/health-checker/concept-understanding-more-about-annotations.html"
+      entries:
+      - title: アノテーションとは
+        url: "/health-checker/concept-what-annotations-are.html"
+      - title: Unified Manager でのアノテーションルールの仕組み
+        url: "/health-checker/concept-how-annotation-rules-work-in-unified-manager.html"
+      - title: 事前定義されたアノテーション値の概要
+        url: "/health-checker/reference-description-of-predefined-annotation-values.html"
+    - title: アノテーションの動的な追加
+      url: "/health-checker/task-adding-annotations-dynamically.html"
+    - title: アノテーションへの値の追加
+      url: "/health-checker/task-adding-values-to-annotations.html"
+    - title: アノテーションを削除する
+      url: "/health-checker/task-deleting-annotations.html"
+    - title: アノテーションリストおよび詳細の表示
+      url: "/health-checker/task-viewing-the-annotation-list-and-details.html"
+    - title: アノテーションから値を削除する
+      url: "/health-checker/task-deleting-values-from-annotations.html"
+    - title: アノテーションルールの作成
+      url: "/health-checker/task-creating-annotation-rules.html"
+    - title: 個々のストレージオブジェクトへの手動でのアノテーションの追加
+      url: "/health-checker/task-adding-annotations-manually-to-individual-storage-objects.html"
+    - title: アノテーションルールの編集
+      url: "/health-checker/task-editing-annotation-rules.html"
+    - title: アノテーションルールの条件の設定
+      url: "/health-checker/task-configuring-conditions-for-annotation-rules.html"
+    - title: アノテーションルールを削除する
+      url: "/health-checker/task-deleting-annotation-rules.html"
+    - title: アノテーションルールの順序を変更する
+      url: "/health-checker/task-reordering-annotation-rules.html"
+  - title: SAML 認証の設定を管理する
+    pdf-filename: SAML認証の設定の管理（クラスタの健常性）
+    url: "/health-checker/concept-managing-saml-authentication-settings-um.html"
+    entries:
+    - title: アイデンティティプロバイダの要件
+      url: "/health-checker/reference-identity-provider-requirements-um.html"
+    - title: SAML 認証の有効化
+      url: "/health-checker/task-enabling-saml-authentication-um.html"
+    - title: SAML 認証に使用するアイデンティティプロバイダを変更する
+      url: "/health-checker/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html"
+    - title: Unified Manager セキュリティ証明書変更後に SAML 認証設定を更新しています
+      url: "/health-checker/task-updating-saml-authentication-settings-after-unified-manager-certificate-change.html"
+    - title: SAML 認証を無効にします
+      url: "/health-checker/task-disabling-saml-authentication-um.html"
+    - title: メンテナンスコンソールから SAML 認証を無効にする
+      url: "/health-checker/task-disabling-saml-authentication-from-the-maintenance-console-um.html"
+  - title: Web UI およびメンテナンスコンソールからのサポートバンドルの送信
+    url: "/health-checker/task-send-a-support-bundle-to-technical-support.html"
+    entries:
+    - title: テクニカルサポートに AutoSupport メッセージとサポートバンドルを送信する
+      url: "/health-checker/reference-setup-autosupport-page.html"
+    - title: メンテナンスコンソールへのアクセス
+      url: "/health-checker/task-accessing-the-maintenance-console.html"
+    - title: サポートバンドルの生成とアップロード
+      url: "/health-checker/task-generating-and-uploading-a-support-bundle.html"
+    - title: Windows クライアントを使用したサポートバンドルの取得
+      url: "/health-checker/task-retrieving-the-support-bundle-using-a-windows-client.html"
+    - title: UNIX または Linux クライアントを使用したサポートバンドルの取得
+      url: "/health-checker/task-retrieving-the-support-bundle-using-a-unix-or-linux-client.html"
+    - title: テクニカルサポートへのサポートバンドルの送信
+      url: "/health-checker/task-sending-a-support-bundle-to-technical-support.html"
+  - title: 複数のワークフローに関連するタスクと情報
+    url: "/health-checker/concept-tasks-and-information-related-to-several-workflows.html"
+    entries:
+    - title: イベントに関するメモの追加と確認
+      url: "/health-checker/task-adding-and-reviewing-notes-about-an-event.html"
+    - title: 特定のユーザにイベントを割り当てます
+      url: "/health-checker/task-assigning-events-to-specific-users.html"
+    - title: イベントを確認して解決します
+      url: "/health-checker/task-acknowledging-and-resolving-events.html"
+    - title: イベントの詳細ページ
+      pdf-filename: イベントの詳細ページ（クラスタの健全性）
+      url: "/health-checker/reference-event-details-page.html"
+      entries:
+      - title: "[Event Information] セクションに表示される内容"
+        url: "/health-checker/reference-what-the-event-information-section-displays.html"
+      - title: "「システム診断」セクションの表示内容"
+        url: "/health-checker/reference-what-the-system-diagnosis-section-displays.html"
+      - title: "[ 提案されたアクション ] セクションの表示内容"
+        url: "/health-checker/reference-what-the-suggested-actions-section-displays.html"
+    - title: 概要のイベントの重大度タイプ
+      url: "/health-checker/reference-description-of-event-severity-types.html"
+    - title: イベントの影響レベルの概要
+      url: "/health-checker/reference-description-of-event-impact-levels.html"
+    - title: イベントの影響領域の概要
+      url: "/health-checker/reference-description-of-event-impact-areas.html"
+    - title: クラスタコンポーネントとその競合要因
+      url: "/health-checker/concept-cluster-components-and-why-they-can-be-in-contention.html"
+    - title: ボリューム / 健全性の詳細ページ
+      url: "/health-checker/reference-health-volume-details-page.html"
+    - title: Storage VM / 健全性の詳細ページ
+      url: "/health-checker/reference-health-svm-details-page.html"
+    - title: クラスタ / 健全性の詳細ページ
+      url: "/health-checker/reference-health-cluster-details-page.html"
+    - title: アグリゲート / 健全性の詳細ページ
+      url: "/health-checker/reference-health-aggregate-details-page.html"
+    - title: ユーザを追加する
+      url: "/health-checker/task-adding-users.html"
+    - title: データベースユーザを作成しています
+      url: "/health-checker/task-creating-a-database-user.html"
+    - title: ユーザタイプの定義
+      url: "/health-checker/reference-definitions-of-user-types.html"
+    - title: Unified Manager のユーザロールと機能
+      url: "/health-checker/reference-unified-manager-roles-and-capabilities.html"
+    - title: HTTPS セキュリティ証明書の生成
+      url: "/health-checker/task-generating-an-https-security-certificate-ocf.html"
+    - title: Unified Manager の CLI コマンドがサポートされています
+      url: "/health-checker/reference-supported-unified-manager-cli-commands.html"
+- title: Unified Manager のメンテナンス時間とは
+  pdf-filename: Unified Managerのメンテナンス時間とは（クラスタの健常性）
+  url: "/health-checker/concept-what-a-um-maintenance-window-is.html"
+  entries:
+  - title: メンテナンス時間のスケジュールによるクラスタイベント通知の無効化
+    url: "/health-checker/task-scheduling-a-maintenance-window-to-disable-cluster-event-notifications.html"
+  - title: スケジュールされたメンテナンス時間を変更またはキャンセルする
+    url: "/health-checker/task-changing-or-canceling-a-scheduled-maintenance-window.html"
+  - title: メンテナンス時間中に発生したイベントの表示
+    url: "/health-checker/task-viewing-events-that-occurred-during-a-maintenance-window.html"

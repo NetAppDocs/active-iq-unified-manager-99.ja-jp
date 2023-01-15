@@ -1,0 +1,56 @@
+---
+permalink: online-help/reference-svm-performance-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: Performanceには、All Storage VMビューとカスタムビューおよびレポートで使用できるフィールドがあります。 
+---
+= Storage VMパフォーマンスのフィールド
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performanceには、All Storage VMビューとカスタムビューおよびレポートで使用できるフィールドがあります。
+
+* * ステータス *
++
+アクティブなイベントがない正常な状態のオブジェクトには、緑のチェックマークアイコン（image:../media/sev-normal-um60.png["重大度が「 Normal 」のイベントのアイコン"]）。オブジェクトにアクティブなイベントがある場合は、重大イベントの場合は赤色のアイコン（image:../media/sev-critical-um60.png["重大度が「重大」のイベントのアイコン"]）では、エラーイベントはオレンジ色になります（image:../media/sev-error-um60.png["重大度が「 ERROR 」のイベントのアイコン"]）、および警告イベントは黄色（image:../media/sev-warning-um60.png["重大度が「警告」のイベントのアイコン"]）。
+
+* * Storage VM *
++
+SVM名をクリックすると、そのSVMのパフォーマンス詳細ページが表示されます。
+
+* * 遅延 *
++
+すべてのI/O要求の平均応答時間。処理あたりのミリ秒で表されます。
+
+* * IOPS *
++
+SVMでの1秒あたりの入出力処理数。
+
+* * MB/ 秒 *
++
+SVMのスループット。1秒あたりのメガバイト数で測定されます。
+
+* *空き容量*
++
+SVMの未使用のストレージ容量（GB）。
+
+* * 合計容量 *
++
+SVMの合計ストレージ容量（GB）。
+
+* * クラスタ *
++
+SVMが属するクラスタ。クラスタ名をクリックすると、そのクラスタの詳細ページが表示されます。
+
+* *クラスタFQDN *
++
+クラスタの完全修飾ドメイン名（FQDN）。
+
+* *しきい値ポリシー*
++
+このストレージオブジェクトに対してアクティブなユーザ定義のパフォーマンスしきい値ポリシー。ポリシー名に省略記号（...）が含まれている場合、ポリシー名にカーソルを合わせると完全なポリシー名または割り当てられているポリシー名のリストが表示されます。[Assign Performance Threshold Policy]ボタンと[* Clear Performance Threshold Policy]ボタンは、左端のチェックボックスをクリックして1つ以上のオブジェクトを選択するまでは無効のままです。
+
+

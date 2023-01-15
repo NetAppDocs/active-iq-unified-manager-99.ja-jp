@@ -1,0 +1,70 @@
+---
+permalink: api-automation/concept-events-api.html 
+sidebar: sidebar 
+keywords:  
+summary: management-serverカテゴリのイベントとシステムAPIを使用すると、データセンター内の監視対象クラスタに対して生成されたイベントを取得し、Active IQ Unified Manager 環境内のインスタンスの詳細をそれぞれ表示できます。 
+---
+= イベントとシステムの詳細の表示
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+。 `events` および `system` のAPI `management-server` カテゴリを使用すると、データセンター内の監視対象クラスタに対して生成されたイベントを取得し、Active IQ Unified Manager 環境内のインスタンスの詳細をそれぞれ表示できます。
+
+
+
+== イベントを表示します
+
+を使用します `/management-server/events` APIを使用して、履歴データなど、データセンター内のイベントを照会できます。名前、インパクトレベル、インパクトエリア、重大度などの組み込みフィルタを使用します。特定のイベントを表示するには、状態、リソース名、およびリソースタイプを指定します。リソースタイプと領域パラメータは、イベントが発生したストレージオブジェクトに関する情報を返し、影響領域は、可用性、容量、構成、セキュリティなど、イベントが発生した問題 に関する情報を返します。保護とパフォーマンス：
+
+また、イベントキーを使用して特定のイベントの詳細を照会し、リソースに対して次の処理を実行することもできます。
+
+[cols="4*"]
+|===
+| カテゴリ | HTTP 動詞 | パス | 説明 
+
+
+ a| 
+management-server
+ a| 
+取得
+ a| 
+`/management-server/events`
+ a| 
+応答の本文は、そのデータセンター内の照会されたイベントのイベントの詳細で構成されます。
+
+
+
+ a| 
+management-server
+ a| 
+取得
+ a| 
+`+/management-server/events/{key}+`
+ a| 
+特定のイベントを照会する場合は、このAPIを実行します。詳細を表示するジョブのイベントキーを入力します。応答の本文は、そのイベントの詳細で構成されます。
+
+|===
+
+
+== システムの詳細の表示
+
+を使用します `/management-server/system` APIを使用して、インスタンス固有の詳細情報をUnified Manager環境で照会できます。API から返される製品とサービスに関する情報には、システムにインストールされている Unified Manager のバージョン、 UUID 、ベンダー名、ホスト OS 、名前、 概要、および Unified Manager インスタンスで実行されているサービスのステータス。
+
+[cols="4*"]
+|===
+| カテゴリ | HTTP 動詞 | パス | 説明 
+
+
+ a| 
+management-server
+ a| 
+取得
+ a| 
+`/management-server/system`
+ a| 
+この API を実行するために入力パラメータは必要ありません。デフォルトでは、現在の Unified Manager インスタンスのシステムの詳細が返されます。
+
+|===

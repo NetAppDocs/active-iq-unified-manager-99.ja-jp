@@ -1,0 +1,20 @@
+---
+permalink: online-help/reference-performance-qos-policy-groups-view.html 
+sidebar: sidebar 
+keywords:  
+summary: QoSポリシーグループビューには、Unified Managerが監視しているクラスタで使用可能なQoSポリシーグループが表示されます。これには、従来のQoSポリシー、アダプティブQoSポリシー、およびパフォーマンスサービスレベルを使用して割り当てられたQoSポリシーが含まれます。 
+---
+= Performance：QoS Policy Groupsビュー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+QoSポリシーグループビューには、Unified Managerが監視しているクラスタで使用可能なQoSポリシーグループが表示されます。これには、従来のQoSポリシー、アダプティブQoSポリシー、およびパフォーマンスサービスレベルを使用して割り当てられたQoSポリシーが含まれます。
+
+ページの上部にあるコントロールを使用すると、目的のQoSポリシーのタイプに基づいて特定のビューを選択したり、特定のオブジェクトを検索したり、フィルタを作成して適用して表示されるデータのリストを絞り込んだり、ページの列の追加/削除/並べ替えを行ったりできます。ページ上のデータをにエクスポートします `.csv` または `.pdf` ファイル。
+
+カスタマイズしたページをカスタムビューとして保存し、データのレポートを定期的に生成して E メールで送信するようにスケジュール設定できます。
+
+を参照してください xref:reference-qos-policy-group-fields.adoc[QoSポリシーグループのフィールド] このページ上のすべてのフィールドの説明については、を参照してください。

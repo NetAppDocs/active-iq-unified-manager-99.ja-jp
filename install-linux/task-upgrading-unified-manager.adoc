@@ -1,0 +1,104 @@
+---
+permalink: install-linux/task-upgrading-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Red HatプラットフォームでUnified Manager 9.7または9.8から9.9にアップグレードするには、インストールファイルをダウンロードして実行します。 
+---
+= Unified Manager をアップグレードする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Red HatプラットフォームでUnified Manager 9.7または9.8から9.9にアップグレードするには、インストールファイルをダウンロードして実行します。
+
+
+
+== 作業を開始する前に
+
+* Unified Manager をアップグレードするシステムがシステム要件とソフトウェア要件を満たしている必要があります。
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[ハードウェアシステムの要件]
+
++
+xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Red Hat および CentOS のソフトウェアとインストールの要件]
+
+* Unified Manager をアップグレードする前に、適切なバージョンの OpenJDK をインストールするか、または適切なバージョンにアップグレードする必要があります。
++
+xref:task-upgrading-openjdk-on-linux-ocum.adoc[Linux での JRE のアップグレード]
+
+* MySQL Community Edition は、 Unified Manager のアップグレード時に自動的にアップグレードされます。システムにインストールされている MySQL のバージョンが 8.0.25 より前の場合は、 Unified Manager のアップグレードプロセスによって MySQL が自動的に 8.0.25 にアップグレードされます。
++
+ただし、システムの MySQL を最新のマイナーバージョンにアップグレードすることもできます。次のマイナーバージョンにアップグレードする前に、システムの MySQL の基本バージョンが 8.0.25 であることを確認してください。
+
+* Red Hat Enterprise Linux Subscription Manager への登録が必要です。
+* アップグレード中に問題が使用される場合にデータが失われないようにするために、 Unified Manager データベースのバックアップを作成しておく必要があります。また、からバックアップファイルを移動することを推奨します `/opt/netapp/data` ディレクトリを外部の場所に移動します。
+* アップグレードの実行中に、パフォーマンスデータの保持期間について、以前のデフォルト設定である 13 カ月のままにするか 6 カ月に変更するかを確認するプロンプトが表示されることがあります。変更を確認すると、 6 カ月を過ぎた過去のパフォーマンスデータはパージされます。
+* アップグレードプロセスの実行中は Unified Manager を使用できなくなるため、実行中の処理がある場合は完了しておいてください。
+
+
+
+
+== 手順
+
+. ターゲットの Red Hat Enterprise Linux サーバまたは CentOS サーバにログインします。
+. サーバに Unified Manager のバンドルをダウンロードします。
++
+xref:task-downloading-unified-manager.adoc[Red Hat または CentOS 版の Unified Manager のダウンロード]
+
+. ダウンロードしたディレクトリに移動し、 Unified Manager のバンドルを展開します。 `unzip ActiveIQUnifiedManager-<version\>.zip`
++
+Unified Manager に必要な RPM モジュールがターゲットディレクトリに解凍されます。
+
+. ディレクトリに次のモジュールがあることを確認します。 `ls *.rpm`
++
+** `netapp-um<version\>.x86_64.rpm`
+
+
+. システムがインターネットに接続されていない場合やRed Hat Enterprise Linuxのリポジトリを使用していない場合は、次の手順に従って、必要なパッケージが揃っているかどうかを確認し、足りないパッケージをダウンロードします。
++
+.. 各パッケージについてその有無を表示します。 `yum install netapp-um<version\>.x86_64.rpm --assumeno`
++
+"Installing :`" セクションの項目は現在のディレクトリにあるパッケージで、 "Installing for dependencies ： " セクションの項目はシステムにないパッケージです。
+
+.. インターネットにアクセスできる別のシステムで、次のコマンドを実行して不足しているパッケージをダウンロードします。 `yum install package_name --downloadonly --downloaddir=.`
++
+パッケージは、として指定されたディレクトリにダウンロードされます `–downloaddir=.`
+
++
+プラグイン「 yum-plugin-downloadonly 」は、 Red Hat Enterprise Linux システムで常に有効になっているとは限りません。インストールせずにパッケージをダウンロードするには、この機能を有効にする必要があります。``yum install yum-plugin-downloadonly``
+
+.. インストールシステムに新しいディレクトリを作成し、ダウンロードしたパッケージをインターネットに接続されたシステムからコピーします。
+.. インストールシステムの新しいディレクトリにディレクトリを変更し、 MySQL Community Edition をインストールするための次のコマンドとその依存関係を実行します。 `yum install *.rpm`
+
+
+. インストール前スクリプトを実行して、アップグレードと競合するシステム設定やインストール済みソフトウェアがないことを確認します。 `sudo ./pre_install_check.sh`
++
+インストール前スクリプトは、システムに有効な Red Hat サブスクリプションがあること、および必要なソフトウェアリポジトリへのアクセス権があることを確認します。問題が検出された場合は、 Unified Manager をアップグレードする前に修正する必要があります。
+
+. 次のスクリプトを使用して Unified Manager をアップグレードします。 `upgrade.sh`
++
+RPM モジュールが自動的に実行され、必要なサポートソフトウェアとそれらで実行されている Unified Manager モジュールがアップグレードされます。アップグレードと競合するシステム設定やインストール済みソフトウェアがないかどうかも確認されます。問題が検出された場合は、 Unified Manager をアップグレードする前に修正する必要があります。
+
+. アップグレードが完了したら、メッセージを上にスクロールして、 Unified Manager Web UI の IP アドレスまたは URL 、メンテナンスユーザの名前（ umadmin ）、およびデフォルトのパスワードを確認します。
++
+次のようなメッセージが表示されます。
+
++
+[listing]
+----
+Active IQ Unified Manager upgraded successfully.
+Use a web browser and one of the following URLs to access the Unified Manager GUI:
+
+https://default_ip_address/    (if using IPv4)
+https://[default_ip_address]/  (if using IPv6)
+https://fully_qualified_domain_name/
+----
+
+
+
+
+== 完了後
+
+サポートされている Web ブラウザに表示された IP アドレスまたは URL を入力して Unified Manager Web UI を起動し、前に設定したメンテナンスユーザの名前（ umadmin ）とパスワードを使用してログインします。

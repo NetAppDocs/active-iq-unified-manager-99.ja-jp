@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-storage-vm-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: Storage VM / Performance Explorerページには、クラスタ内のすべてのStorage Virtual Machine（SVM）の詳細なパフォーマンス概要が表示されます。 
+---
+= Storage VM / Performance Explorerページ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage VM / Performance Explorerページには、クラスタ内のすべてのStorage Virtual Machine（SVM）の詳細なパフォーマンス概要が表示されます。
+
+このページでは、一定期間のStorage VMのパフォーマンスを追跡して比較できるため、SVMのパフォーマンスのトラブルシューティングや微調整に役立ちます。
+
+表示と比較機能を使用して、このStorage VMのパフォーマンスを次の対象と比較できます。
+
+* 同じクラスタ上の他のSVM
+* このSVM上のボリューム
+* このSVM上のネットワークインターフェイス
+
+
+Storage VM / Performanceページでは、次の操作を実行できます。
+
+* しきい値に関連する問題とその詳細を表示します
+* SVMのパフォーマンスデータを追跡して比較する
+* しきい値に関連する問題の調査とトラブルシューティング
+* パフォーマンスの問題の調査とトラブルシューティング
+

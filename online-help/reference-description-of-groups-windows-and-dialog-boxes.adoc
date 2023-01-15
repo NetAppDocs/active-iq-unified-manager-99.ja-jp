@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-groups-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: '[グループ]ページを使用して、すべてのグループを表示および管理できます。ストレージオブジェクトのグループルールやアクションは、グループルールタブおよびグループアクションタブから設定することもできます。' 
+---
+= 概要 of groupsのウィンドウとダイアログボックス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+[グループ]ページを使用して、すべてのグループを表示および管理できます。ストレージオブジェクトのグループルールやアクションは、グループルールタブおよびグループアクションタブから設定することもできます。

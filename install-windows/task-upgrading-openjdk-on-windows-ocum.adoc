@@ -1,0 +1,51 @@
+---
+permalink: install-windows/task-upgrading-openjdk-on-windows-ocum.html 
+sidebar: sidebar 
+keywords: OpenJDK,JRE 
+summary: Unified Manager がインストールされている Windows サーバで OpenJDK を新しいバージョンにアップグレードすることで、セキュリティの脆弱性に対する修正を入手できます。 
+---
+= OpenJDK のアップグレード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager がインストールされている Windows サーバで OpenJDK を新しいバージョンにアップグレードすることで、セキュリティの脆弱性に対する修正を入手できます。
+
+
+
+== 作業を開始する前に
+
+Unified Manager がインストールされている Windows システムに対する admin 権限が必要です。
+
+
+
+== このタスクについて
+
+OpenJDK のリリースはリリースファミリー内で更新できます。たとえば、OpenJDK 11.0.7からOpenJDK 11.0.9にアップグレードできますが、OpenJDK 11からOpenJDK 12に直接更新することはできません。
+
+
+
+== 手順
+
+. Unified Manager ホストマシンに admin ユーザとしてログインします。
+. OpenJDK の適切なバージョン（ 64 ビット）をターゲットシステムにダウンロードします。
++
+たとえば、をダウンロードします `openjdk-11_windows-x64_bin.zip` 移動元 `+http://jdk.java.net/11/+`。
+
+. Windows サービスコンソールを使用して、次の Unified Manager サービスを停止します。
++
+** NetApp Active IQ 取得サービス（ Ocie-au ）
+** NetApp Active IQ 管理サーバサービス（ Oncommandsvc ）
+
+
+. を展開します `zip` ファイル。
+. 作成されたからディレクトリとファイルをコピーします `jdk` ディレクトリ。例： `jdk-11.0.9` Javaがインストールされている場所に移動します。例 `C:\Program Files\NetApp\JDK\`
+. Windows サービスコンソールを使用して Unified Manager サービスを開始します。
++
+** NetApp Active IQ 管理サーバサービス（ Oncommandsvc ）
+** NetApp Active IQ 取得サービス（ Ocie-au ）
+
+
+

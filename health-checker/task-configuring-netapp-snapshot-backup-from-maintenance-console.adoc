@@ -1,0 +1,62 @@
+---
+permalink: health-checker/task-configuring-netapp-snapshot-backup-from-maintenance-console.html 
+sidebar: sidebar 
+keywords: configure NetApp Snapshot backup,using maintenance console 
+summary: メンテナンスコンソールから Active IQ Unified Manager バックアップを NetApp Snapshot バックアップに設定する必要があります。 
+---
+= メンテナンスコンソールから NetApp Snapshot バックアップを設定する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスコンソールから Active IQ Unified Manager バックアップを NetApp Snapshot バックアップに設定する必要があります。
+
+
+
+== 作業を開始する前に
+
+システムに関する次の詳細を確認しておく必要があります。
+
+* クラスタの IP アドレス
+* Storage VM 名
+* ボリューム名
+* LUN 名
+* マウントパス
+* ストレージシステムのクレデンシャル
+
+
+
+
+== 手順
+
+. Unified Manager のメンテナンスコンソールにアクセスします。
+. 入力するコマンド `4` をクリックして、[バックアップリストア]を選択します。
+. 入力するコマンド `2` NetApp Snapshot *を使用してバックアップとリストアを選択します。
++
+[NOTE]
+====
+バックアップ設定を変更する場合は、と入力します `3` Update NetApp Snapshot Backup Configurationにアクセスします。更新できるのはパスワードのみです。
+
+====
+. メニューからと入力します `1` をクリックして、NetApp Snapshotバックアップの設定*を選択します。
+. 入力するコマンド `1` をクリックして必要な情報を指定します。
+. メンテナンスコンソールのユーザ名とパスワードを入力し、 LUN がホストにマウントされたことを確認します。
++
+次に、このプロセスでは、データディレクトリ、 LUN パス、 Storage VM 、ボリューム、スペースの可用性、 ドライブなど、お客様から提供されたものは正しいものです。バックグラウンドで実行される処理は次のとおりです。
+
++
+** サービスが停止されました
+** データベースディレクトリがマウントされたストレージに移動されます
+** データベースディレクトリが削除され、シンボリックリンクが確立されます
+** サービスは Active IQ Unified Manager インターフェイスでの設定の完了後に再開されます。バックアップタイプはネットアップの Snapshot に変更され、ユーザインターフェイスにはデータベースバックアップ（ Snapshot ベース）として反映されます。
+
+
+
+
+
+
+== 例
+
+バックアップ処理原因を開始する前に、 Snapshot 設定に変更がないかどうかを確認する必要があります。これは、 Snapshot が無効である可能性があるためです。G ドライブにバックアップを設定し、 Snapshot を作成したとします。後でバックアップを E ドライブに再構成し、データは新しい設定に従って E ドライブに保存されます。G ドライブ内で作成されたスナップショットをリストアしようとすると、 G ドライブが存在しないというエラーで失敗します。

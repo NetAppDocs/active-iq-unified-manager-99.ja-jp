@@ -1,0 +1,37 @@
+---
+permalink: install-linux/task-upgrading-openjdk-on-linux-ocum.html 
+sidebar: sidebar 
+keywords: OpenJDK,JRE 
+summary: Unified Manager がインストールされている Linux サーバで OpenJDK を新しいバージョンにアップグレードすることで、セキュリティの脆弱性に対する修正を入手できます。 
+---
+= Linux での OpenJDK のアップグレード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager がインストールされている Linux サーバで OpenJDK を新しいバージョンにアップグレードすることで、セキュリティの脆弱性に対する修正を入手できます。
+
+
+
+== 作業を開始する前に
+
+Unified Manager がインストールされている Linux システムに対する root 権限が必要です。
+
+
+
+== このタスクについて
+
+OpenJDK のリリースはリリースファミリー内で更新できます。たとえば、OpenJDK 11.0.7からOpenJDK 11.0.9にアップグレードできますが、OpenJDK 11からOpenJDK 12に直接更新することはできません。
+
+
+
+== 手順
+
+. Unified Manager ホストマシンに root ユーザとしてログインします。
+. 適切なバージョンの OpenJDK （ 64 ビット）をターゲットシステムにダウンロードします。
+. Unified Manager のサービスを停止します。 `systemctl stop ocieau``systemctl stop ocie`
+. システムに最新の OpenJDK をインストールします。
+. Unified Manager のサービスを開始します。 `systemctl start ocie``systemctl start ocieau`
+

@@ -1,0 +1,30 @@
+---
+permalink: install-vapp/task-downloading-the-unified-manager-iso-image-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager をアップグレードする前に、 Unified Manager のアップグレードファイルをNetApp Support Siteからダウンロードします。 
+---
+= Unified Manager のアップグレードファイルをダウンロードしています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager をアップグレードする前に、 Unified Manager のアップグレードファイルをNetApp Support Siteからダウンロードします。
+
+
+
+== 作業を開始する前に
+
+NetApp Support Siteのログインクレデンシャルが必要です。
+
+
+
+== 手順
+
+. NetApp Support Siteにログインします。 https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp Support Site"]
+. VMware vSphereでのUnified Managerのアップグレードに使用する*ダウンロードページに移動します。
+. をダウンロードします `.iso` イメージをアップグレードし、vSphere Clientからアクセス可能なローカルまたはネットワークのディレクトリに保存します。
+. チェックサムを確認して、ソフトウェアが正しくダウンロードされたことを確認します。
+

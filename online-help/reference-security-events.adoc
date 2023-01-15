@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-security-events.html 
+sidebar: sidebar 
+keywords: security events 
+summary: セキュリティイベントは、『NetApp ONTAP 9セキュリティ設定ガイド』に定義されているパラメータに基づいて、ONTAP クラスタ、Storage Virtual Machine（SVM）、およびボリュームのセキュリティステータスに関する情報を提供します。これらのイベントは潜在的な問題を通知するもので、問題の重大度を評価し、必要に応じて問題を修正することができます。 
+---
+= セキュリティイベント
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+セキュリティイベントは、『 ONTAP 9_ NetApp Security Hardening Guide 』に定義されているパラメータに基づいて、 ONTAP クラスタ、 Storage Virtual Machine （ SVM ）、およびボリュームのセキュリティステータスに関する情報を提供します。これらのイベントは潜在的な問題を通知するもので、問題の重大度を評価し、必要に応じて問題を修正することができます。
+
+セキュリティイベントはソースタイプ別にグループ化され、イベント名とトラップ名、影響レベル、および重大度が表示されます。これらのイベントは、クラスタおよび Storage VM のイベントカテゴリに表示されます。

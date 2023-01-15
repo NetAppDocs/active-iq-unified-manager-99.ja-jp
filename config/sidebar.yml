@@ -1,0 +1,104 @@
+---
+section: config
+title: 設定タスクと管理タスクを実行
+entries:
+- title: Active IQ Unified Manager を設定しています
+  url: "/config/concept-configuring-unified-manager.html"
+  entries:
+  - title: 設定手順の概要
+    url: "/config/concept-overview-of-the-configuration-sequence.html"
+  - title: Unified Manager Web UI にアクセスします
+    url: "/config/task-accessing-oncommand-unified-manager-web-ui.html"
+  - title: Unified Manager Web UI の初期セットアップを実行する
+    url: "/config/task-performing-the-initial-setup-of-the-unified-manager-web-ui.html"
+  - title: クラスタを追加する
+    url: "/config/task-adding-clusters.html"
+  - title: Unified Manager でアラート通知を送信するための設定
+    url: "/config/task-configuring-unified-manager-to-send-alert-notifications.html"
+    entries:
+    - title: イベント通知を設定しています
+      url: "/config/task-configuring-event-notification-settings.html"
+    - title: リモート認証の有効化
+      url: "/config/task-enabling-remote-authentication.html"
+    - title: リモート認証でのネストされたグループの無効化
+      url: "/config/task-disabling-nested-groups-from-remote-authentication.html"
+    - title: 認証サーバを追加しています
+      url: "/config/task-adding-authentication-servers.html"
+    - title: 認証サーバの設定をテストする
+      url: "/config/task-testing-the-configuration-of-authentication-servers-um-6-0.html"
+    - title: ユーザを追加する
+      url: "/config/task-adding-users.html"
+    - title: アラートの追加
+      url: "/config/task-adding-alerts.html"
+  - title: Unified Manager に自動的に追加される EMS イベント
+    url: "/config/reference-ems-events-that-are-added-automatically-to-unified-manager.html"
+  - title: ONTAP EMS イベントに登録する
+    url: "/config/task-subscribing-to-ontap-ems-events.html"
+  - title: SAML 認証の設定を管理する
+    url: "/config/concept-managing-saml-authentication-settings-um.html"
+    entries:
+    - title: アイデンティティプロバイダの要件
+      url: "/config/reference-identity-provider-requirements-um.html"
+    - title: SAML 認証の有効化
+      url: "/config/task-enabling-saml-authentication-um.html"
+  - title: ローカルユーザのパスワードを変更しています
+    url: "/config/task-changing-the-local-user-password.html"
+  - title: セッションの非アクティブ時のタイムアウト設定
+    url: "/config/task-setting-the-session-inactivity-timeout.html"
+  - title: Unified Manager のホスト名を変更しています
+    url: "/config/concept-changing-the-unified-manager-host-name.html"
+    entries:
+    - title: Unified Manager 仮想アプライアンスのホスト名を変更する
+      url: "/config/task-changing-the-unified-manager-host-name-on-vmware.html"
+      entries:
+      - title: HTTPS セキュリティ証明書の生成
+        url: "/config/task-generating-an-https-security-certificate-ocf.html"
+      - title: Unified Manager 仮想マシンを再起動しています
+        url: "/config/task-restarting-the-unified-manager-virtual-machine.html"
+    - title: Linux システムで Unified Manager ホスト名を変更する
+      url: "/config/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html"
+  - title: ポリシーベースのストレージ管理を有効または無効にします
+    url: "/config/task-enabling-and-disabling-policy-based-storage-management.html"
+- title: Unified Manager のバックアップを設定しています
+  url: "/config/concept-configuring-um-backup.html"
+- title: メンテナンスコンソールを使用する
+  url: "/config/task-using-the-maintenance-console.html"
+  entries:
+  - title: メンテナンスコンソールで提供される機能
+    url: "/config/concept-what-functionality-the-maintenance-console-provides.html"
+  - title: メンテナンスユーザの役割
+    url: "/config/concept-what-the-maintenance-user-does.html"
+  - title: 診断ユーザの権限
+    url: "/config/concept-what-the-diagnostic-user-does.html"
+  - title: メンテナンスコンソールへのアクセス
+    url: "/config/task-accessing-the-maintenance-console.html"
+  - title: vSphere VM コンソールを使用してメンテナンスコンソールにアクセスする
+    url: "/config/task-accessing-the-maintenance-console-using-vsphere.html"
+  - title: メンテナンスコンソールのメニュー
+    url: "/config/concept-maintenance-console-menu.html"
+    entries:
+    - title: Network Configuration （ネットワーク設定）メニュー
+      url: "/config/reference-network-configuration-menu.html"
+    - title: System Configuration （システム設定）メニュー
+      url: "/config/reference-system-configuration-menu.html"
+    - title: Support and Diagnostics （サポートと診断）メニュー
+      url: "/config/reference-support-and-diagnostics-menu.html"
+    - title: その他のメニューオプション
+      url: "/config/reference-additional-menu-options.html"
+  - title: Windows でメンテナンスユーザのパスワードを変更する
+    url: "/config/task-changing-the-maintenance-user-password-on-windows.html"
+  - title: Linux システムでの umadmin パスワードの変更
+    url: "/config/task-changing-the-umadmin-password-on-rhel.html"
+  - title: Unified Manager が HTTP および HTTPS プロトコルに使用するポートを変更する
+    url: "/config/task-changing-the-ports-um-uses-for-http-and-https-protocols.html"
+  - title: ネットワークインターフェイスの追加
+    url: "/config/task-adding-additional-network-interfaces.html"
+  - title: Unified Manager データベースディレクトリにディスクスペースを追加しています
+    url: "/config/concept-adding-disk-space-to-the-unified-manager-database-directory.html"
+    entries:
+    - title: Linux ホストのデータディレクトリにスペースを追加しています
+      url: "/config/task-adding-space-to-the-data-directory-of-the-unified-manager-red-hat-enterprise-linux-host.html"
+    - title: VMware 仮想マシンのデータディスクにスペースを追加しています
+      url: "/config/task-adding-space-to-the-data-disk-of-the-vmware-virtual-machine.html"
+    - title: Microsoft Windows サーバの論理ドライブにスペースを追加する
+      url: "/config/task-adding-space-to-the-data-disk-of-the-microsoft-windows-server.html"

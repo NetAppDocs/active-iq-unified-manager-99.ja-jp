@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-protection-relationships-from-storage-vms-page.html 
+sidebar: sidebar 
+keywords: storage VMs,viewing protection relationships 
+summary: Storage VM ページを使用して、既存の Storage VM のディザスタリカバリ関係のステータスを表示できます。 
+---
+= Storage VM ページで保護関係を表示します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage VMS ページを使用して、既存の Storage VM の災害復旧関係のステータスを表示できます。
+
+
+
+== 作業を開始する前に
+
+アプリケーション管理者またはストレージ管理者のロールが必要です。
+
+
+
+== このタスクについて
+
+転送と遅延のステータス、ソース、デスティネーションの詳細など、保護関係の詳細も確認できます。必要な形式でレポートをスケジュールしたり、既存のレポートをダウンロードしたりできます。*表示/非表示*ボタンを使用すると、デフォルトでは表示されないレポートに必要な列を追加できます。
+
+
+
+== 手順
+
+. 左側のナビゲーションペインで、 * storage * > * Storage VM* をクリックします。
+. * VIEW * メニューから * Relationship * > * All Relationships * を選択します。
++
+設定されているすべての Storage VM について、「関係：すべての関係」ビューが表示されます。
+
+

@@ -1,0 +1,14 @@
+---
+permalink: install-linux/concept-installing-unified-manager-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager をダウンロードしてインストールする一連の手順は、インストールシナリオによって異なります。 
+---
+= Linux システムへの Unified Manager のインストール
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager をダウンロードしてインストールする一連の手順は、インストールシナリオによって異なります。

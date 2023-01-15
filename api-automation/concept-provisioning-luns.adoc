@@ -1,0 +1,479 @@
+---
+permalink: api-automation/concept-provisioning-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: Active IQ Unified Manager に付属のプロビジョニングAPIを使用して、SVM上でLUNをプロビジョニングできます。このプロビジョニングワークフローでは、 LUN を作成する前に SVM 、パフォーマンスサービスレベル、およびストレージ効率化ポリシーのキーを取得する手順について詳しく説明します。 
+---
+= LUN のプロビジョニング
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager に付属のプロビジョニング API を使用して、 Storage Virtual Machine （ SVM ）に LUN をプロビジョニングできます。このプロビジョニングワークフローでは、 LUN を作成する前に SVM 、パフォーマンスサービスレベル、およびストレージ効率化ポリシーのキーを取得する手順について詳しく説明します。
+
+次の図は、 LUN のプロビジョニングワークフローの手順を示しています。
+
+image::../media/create-luns.gif[LUNs を作成します]
+
+[NOTE]
+====
+このワークフローは、 ONTAP クラスタが Unified Manager に追加され、クラスタキーが取得されていることを前提としています。また、 SVM がすでにクラスタに作成されていることも前提としています。
+
+====
+. LUN を作成する SVM の SVM キーを取得します。詳細については、「クラスタテノ SVM ノサクシヨ _ ワークフロー」のトピックを参照してください。
+. 次の API を実行し、応答からパフォーマンスサービスレベルのキーを取得します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+ストレージプロバイダ
+ a| 
+取得
+ a| 
+`/storage-provider/performance-service-levels`
+
+|===
+[NOTE]
+====
+システム定義のパフォーマンスサービスレベルの詳細を取得するには、を設定します `system_defined` パラメータをに入力します `true`。出力から、 LUN に適用するパフォーマンスサービスレベルのキーを取得します。
+
+====
+. 必要に応じて、次の API を実行し、応答から LUN に適用するストレージ効率化ポリシーのキーを取得します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+ストレージプロバイダ
+ a| 
+取得
+ a| 
+`/storage-provider/storage-efficiency-policies`
+
+|===
+. 作成する LUN ターゲットへのアクセスを許可するイニシエータグループ（ igroup ）が作成されているかどうかを確認します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+データセンター
+ a| 
+取得
+ a| 
+`/datacenter/protocols/san/igroups`  `+/datacenter/protocols/san/igroups/{key}+`
+
+|===
+igroup がアクセス権を持つ SVM をパラメータ値として入力する必要があります。また、特定の igroup を照会する場合は、入力パラメータとして igroup 名（キー）を入力します。
+
+. アクセスを許可する igroup が出力に見つかった場合は、そのキーを取得します。見つからない場合は igroup を作成します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+データセンター
+ a| 
+投稿（ Post ）
+ a| 
+`/datacenter/protocols/san/igroups`
+
+|===
+作成する igroup の詳細を、入力パラメータとして指定する必要があります。これは同期呼び出しであり、 igroup の作成を出力で確認できます。エラーが発生した場合はメッセージが表示されるため、トラブルシューティングして API を再実行します。
+
+. LUN を作成します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+ストレージプロバイダ
+ a| 
+投稿（ Post ）
+ a| 
+`/storage-provider/luns`
+
+|===
+LUN を作成するには、取得した値を必須パラメータとして指定する必要があります。
+
+[NOTE]
+====
+ストレージ効率化ポリシーは、 LUN の作成ではオプションのパラメータです。
+
+====
+* cURL の例 *
+
+作成する LUN のすべての詳細を入力パラメータとして指定する必要があります。
+
+[listing]
+----
+curl -X POST "https://<hostname>/api/storage-provider/luns" -H "accept: application/json" -H
+    "Content-Type: application/json" -H "Authorization: Basic <Base64EncodedCredentials>" -d
+    "{ \"name\": \"MigrationLunWithVol\", \"os_type\": \"windows\",
+    \"performance_service_level\": { \"key\": \"7873dc0d-0ee5-11ea-82d7-fa163ea0eb69\" },
+    \"space\": { \"size\": 1024000000 }, \"svm\": { \"key\":
+    \"333fbcfa-0ace-11ea-9d6d-00a09897cc15:type=vserver,uuid=4d462ec8-0f56-11ea-9d6d-00a09897cc15\"
+    }}"
+----
+JSON 出力にジョブオブジェクトキーが表示され、作成した LUN の検証に使用できます。
+
+. ジョブの照会で返されたジョブオブジェクトキーを使用して、 LUN の作成を確認します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+management-server
+ a| 
+取得
+ a| 
+`+/management-server/jobs/{key}+`
+
+|===
+応答の末尾に、作成された LUN のキーが表示されます。
+
+[listing]
+----
+    {
+      "name": "lunKey",
+      "value": "key": "f963839f-0f95-11ea-9963-00a098884af5:type=lun,uuid=71f3187e-bf19-4f34-ba34-b1736209b45a"
+    }
+ ],
+ "_links": {
+    "self": {
+      "href": "/api/management-server/jobs/fa7c856d29e2b80f%3A-8d3325d%3A16e9eb5ed6d%3A-548b"
+    }
+ }
+}
+----
+. 返されたキーを指定して次の API を実行し、 LUN の作成を確認します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+ストレージプロバイダ
+ a| 
+取得
+ a| 
+`+/storage-provider/luns/{key}+`
+
+|===
+* JSON 出力の例 *
+
+のPOSTメソッドが表示されます `/storage-provider/luns` 各関数に必要なすべてのAPIを内部的に呼び出し、オブジェクトを作成します。たとえば、を呼び出します `/storage-provider/performance-service-levels/` LUNにパフォーマンスサービスレベルを割り当てるためのAPI。
+
+[listing]
+----
+{
+  "key": "f963839f-0f95-11ea-9963-00a098884af5:type=lun,uuid=71f3187e-bf19-4f34-ba34-b1736209b45a",
+  "name": "/vol/NSLM_VOL_LUN_1574753881051/LunForTesting1",
+  "uuid": "71f3187e-bf19-4f34-ba34-b1736209b45a",
+  "cluster": {
+    "uuid": "f963839f-0f95-11ea-9963-00a098884af5",
+    "key": "f963839f-0f95-11ea-9963-00a098884af5:type=cluster,uuid=f963839f-0f95-11ea-9963-00a098884af5",
+    "name": "sti2552-4451574693410",
+    "_links": {
+      "self": {
+        "href": "/api/datacenter/cluster/clusters/f963839f-0f95-11ea-9963-00a098884af5:type=cluster,uuid=f963839f-0f95-11ea-9963-00a098884af5"
+      }
+    }
+  },
+  "svm": {
+    "uuid": "7754a99c-101f-11ea-9963-00a098884af5",
+    "key": "f963839f-0f95-11ea-9963-00a098884af5:type=vserver,uuid=7754a99c-101f-11ea-9963-00a098884af5",
+    "name": "Testingsvm1",
+    "_links": {
+      "self": {
+        "href": "/api/datacenter/svm/svms/f963839f-0f95-11ea-9963-00a098884af5:type=vserver,uuid=7754a99c-101f-11ea-9963-00a098884af5"
+      }
+    }
+  },
+  "volume": {
+    "uuid": "961778bb-2be9-4b4a-b8da-57c7026e52ad",
+    "key": "f963839f-0f95-11ea-9963-00a098884af5:type=volume,uuid=961778bb-2be9-4b4a-b8da-57c7026e52ad",
+    "name": "NSLM_VOL_LUN_1574753881051",
+    "_links": {
+      "self": {
+        "href": "/api/datacenter/storage/volumes/f963839f-0f95-11ea-9963-00a098884af5:type=volume,uuid=961778bb-2be9-4b4a-b8da-57c7026e52ad"
+      }
+    }
+  },
+  "assigned_performance_service_level": {
+    "key": "861f6e4d-0c35-11ea-9d73-fa163e706bc4",
+    "name": "Value",
+    "peak_iops": 75,
+    "expected_iops": 75,
+    "_links": {
+      "self": {
+        "href": "/api/storage-provider/performance-service-levels/861f6e4d-0c35-11ea-9d73-fa163e706bc4"
+      }
+    }
+  },
+  "recommended_performance_service_level": {
+    "key": null,
+    "name": "Idle",
+    "peak_iops": null,
+    "expected_iops": null,
+    "_links": {}
+  },
+  "assigned_storage_efficiency_policy": {
+    "key": null,
+    "name": "Unassigned",
+    "_links": {}
+  },
+  "space": {
+    "size": 1024458752
+  },
+  "os_type": "linux",
+  "_links": {
+    "self": {
+      "href": "/api/storage-provider/luns/f963839f-0f95-11ea-9963-00a098884af5%3Atype%3Dlun%2Cuuid%3D71f3187e-bf19-4f34-ba34-b1736209b45a"
+    }
+  }
+}
+----
+
+
+== LUN の作成またはマッピングに失敗した場合のトラブルシューティング手順
+
+このワークフローを完了しても、 LUN の作成に失敗することがあります。LUN の作成に成功しても、 LUN を作成したノードに SAN LIF またはアクセスエンドポイントがないために igroup との LUN マッピングが失敗することがあります。障害が発生すると、次のメッセージが表示されます。
+
+[listing]
+----
+The nodes <node_name> and <partner_node_name> have no LIFs configured with the iSCSI or FCP protocol for Vserver <server_name>. Use the access-endpoints API to create a LIF for the LUN.
+----
+この問題を回避するには、次のトラブルシューティング手順を実行します。
+
+. LUN を作成しようとした SVM に、 iSCSI/FCP プロトコルをサポートするアクセスエンドポイントを作成します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+ストレージプロバイダ
+ a| 
+投稿（ Post ）
+ a| 
+`/storage-provider/access-endpoints`
+
+|===
+* cURL の例 *
+
+作成するアクセスエンドポイントの詳細を、入力パラメータとして指定する必要があります。
+
+[NOTE]
+====
+入力パラメータにが追加されていることを確認します `address` をクリックして、LUNおよびのホームノードを指定します `ha_address` をクリックして、ホームノードのパートナーノードを指定します。この処理を実行すると、ホームノードとパートナーノードの両方にアクセスエンドポイントが作成されます。
+
+====
+[listing]
+----
+curl -X POST "https://<hostname>/api/storage-provider/access-endpoints" -H "accept:
+    application/json" -H "Content-Type: application/json" -H "Authorization: Basic <Base64EncodedCredentials>" -d "{ \"data_protocols\": [ \"iscsi\" ], \"ip\": {
+    \"address\": \"10.162.83.126\", \"ha_address\": \"10.142.83.126\", \"netmask\":
+    \"255.255.0.0\" }, \"lun\": { \"key\":
+    \"e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=lun,uuid=b8e0c1ae-0997-47c5-97d2-1677d3ec08ff\" },
+    \"name\": \"aep_example\" }"
+----
+. JSON 出力で返されたジョブオブジェクトキーを使用してジョブを照会し、 SVM にアクセスエンドポイントを追加するジョブが正常に実行されたこと、および SVM で iSCSI/FCP サービスが有効になっていることを確認します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+management-server
+ a| 
+取得
+ a| 
+`+/management-server/jobs/{key}+`
+
+|===
+* JSON 出力の例 *
+
+出力の末尾に、作成されたアクセスエンドポイントのキーが表示されます。次の出力では、が表示されています `"name": "accessEndpointKey"` valueは、LUNのホームノードにアクセスエンドポイントが作成され、キーがであることを示します `9c964258-14ef-11ea-95e2-00a098e32c28`。。 `"name": "accessEndpointHAKey"` valueは、ホームノードのパートナーノードにアクセスエンドポイントが作成され、キーがであることを示します `9d347006-14ef-11ea-8760-00a098e3215f`。
+
+[listing]
+----
+  "job_results": [
+    {
+      "name": "accessEndpointKey",
+      "value": "e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=network_lif,lif_uuid=9c964258-14ef-11ea-95e2-00a098e32c28"
+    },
+    {
+      "name": "accessEndpointHAKey",
+      "value": "e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=network_lif,lif_uuid=9d347006-14ef-11ea-8760-00a098e3215f"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/management-server/jobs/71377eeea0b25633%3A-30a2dbfe%3A16ec620945d%3A-7f5a"
+    }
+  }
+}
+----
+. LUN を変更して igroup マッピングを更新します。ワークフローの変更の詳細については、「ストレージワークロードの変更」を参照してください。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+ストレージプロバイダ
+ a| 
+パッチ
+ a| 
+`+/storage-provider/lun/{key}+`
+
+|===
+入力で、 LUN マッピングの更新に使用する igroup キーと LUN キーを指定します。
+
+* cURL の例 *
+
+[listing]
+----
+curl -X PATCH "https://<hostname>/api/storage-provider/luns/e4f33f90-f75f-11e8-9ed9-00a098e3215f%3Atype%3Dlun%2Cuuid%3Db8e0c1ae-0997-47c5-97d2-1677d3ec08ff"
+-H "accept: application/json" -H "Content-Type: application/json" -H "Authorization: Basic <Base64EncodedCredentials>" -d
+"{ \"lun_maps\": [ { \"igroup\":
+{ \"key\": \"e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=igroup,uuid=d19ec2fa-fec7-11e8-b23d-00a098e32c28\" },
+\"logical_unit_number\": 3 } ]}"
+----
+JSON 出力にジョブオブジェクトキーが表示され、マッピングが成功したかどうかの検証に使用できます。
+
+. LUN キーを指定して照会することで、 LUN マッピングを確認します。
+
+
+[cols="3*"]
+|===
+| カテゴリ | HTTP 動詞 | パス 
+
+
+ a| 
+ストレージプロバイダ
+ a| 
+取得
+ a| 
+`+/storage-provider/luns/{key}+`
+
+|===
+* JSON 出力の例 *
+
+出力から、LUNがigroup（キー `d19ec2fa-fec7-11e8-b23d-00a098e32c28`）を使用してプロビジョニングされました。
+
+[listing]
+----
+{
+  "key": "e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=lun,uuid=b8e0c1ae-0997-47c5-97d2-1677d3ec08ff",
+  "name": "/vol/NSLM_VOL_LUN_1575282642267/example_lun",
+  "uuid": "b8e0c1ae-0997-47c5-97d2-1677d3ec08ff",
+  "cluster": {
+    "uuid": "e4f33f90-f75f-11e8-9ed9-00a098e3215f",
+    "key": "e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=cluster,uuid=e4f33f90-f75f-11e8-9ed9-00a098e3215f",
+    "name": "umeng-aff220-01-02",
+    "_links": {
+      "self": {
+        "href": "/api/datacenter/cluster/clusters/e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=cluster,uuid=e4f33f90-f75f-11e8-9ed9-00a098e3215f"
+      }
+    }
+  },
+  "svm": {
+    "uuid": "97f47088-fa8e-11e8-9ed9-00a098e3215f",
+    "key": "e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=vserver,uuid=97f47088-fa8e-11e8-9ed9-00a098e3215f",
+    "name": "NSLM12_SVM_ritu",
+    "_links": {
+      "self": {
+        "href": "/api/datacenter/svm/svms/e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=vserver,uuid=97f47088-fa8e-11e8-9ed9-00a098e3215f"
+      }
+    }
+  },
+  "volume": {
+    "uuid": "a1e09503-a478-43a0-8117-d25491840263",
+    "key": "e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=volume,uuid=a1e09503-a478-43a0-8117-d25491840263",
+    "name": "NSLM_VOL_LUN_1575282642267",
+    "_links": {
+      "self": {
+        "href": "/api/datacenter/storage/volumes/e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=volume,uuid=a1e09503-a478-43a0-8117-d25491840263"
+      }
+    }
+  },
+  "lun_maps": [
+    {
+      "igroup": {
+        "uuid": "d19ec2fa-fec7-11e8-b23d-00a098e32c28",
+        "key": "e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=igroup,uuid=d19ec2fa-fec7-11e8-b23d-00a098e32c28",
+        "name": "lun55_igroup",
+        "_links": {
+          "self": {
+            "href": "/api/datacenter/protocols/san/igroups/e4f33f90-f75f-11e8-9ed9-00a098e3215f:type=igroup,uuid=d19ec2fa-fec7-11e8-b23d-00a098e32c28"
+          }
+        }
+      },
+      "logical_unit_number": 3
+    }
+  ],
+  "assigned_performance_service_level": {
+    "key": "cf2aacda-10df-11ea-bbe6-fa163e599489",
+    "name": "Value",
+    "peak_iops": 75,
+    "expected_iops": 75,
+    "_links": {
+      "self": {
+        "href": "/api/storage-provider/performance-service-levels/cf2aacda-10df-11ea-bbe6-fa163e599489"
+      }
+    }
+  },
+  "recommended_performance_service_level": {
+    "key": null,
+    "name": "Idle",
+    "peak_iops": null,
+    "expected_iops": null,
+    "_links": {}
+  },
+  "assigned_storage_efficiency_policy": {
+    "key": null,
+    "name": "Unassigned",
+    "_links": {}
+  },
+  "space": {
+    "size": 1073741824
+  },
+  "os_type": "linux",
+  "_links": {
+    "self": {
+      "href": "/api/storage-provider/luns/e4f33f90-f75f-11e8-9ed9-00a098e3215f%3Atype%3Dlun%2Cuuid%3Db8e0c1ae-0997-47c5-97d2-1677d3ec08ff"
+    }
+  }
+}
+----

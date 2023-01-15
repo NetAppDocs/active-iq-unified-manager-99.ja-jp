@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-security-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: Active IQ Unified Manager ダッシュボードのセキュリティパネルを有効または無効にできます。有効にすると、準拠の監視の設定、および関連するセキュリティイベントと管理アクションをカスタマイズすることもできます。 
+---
+= セキュリティダッシュボード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ Unified Manager ダッシュボードのセキュリティパネルを有効または無効にできます。有効にすると、準拠の監視の設定、および関連するセキュリティイベントと管理アクションをカスタマイズすることもできます。
+
+[NOTE]
+====
+これらの設定を編集できるのは、管理者ロールのユーザだけです。
+
+====
+ONTAP クラスタ、Storage VM、およびボリュームのセキュリティ条件は、『NetApp ONTAP 9セキュリティ設定ガイド』に定義されている推奨事項に照らして評価されます。ダッシュボードのセキュリティパネルには、クラスタ、Storage VM、およびボリュームのセキュリティコンプライアンスステータスが表示されます。この機能を有効にすると、セキュリティ違反が発生しているクラスタまたはStorage VMのセキュリティイベントも生成されます。
+
+
+
+== 設定のカスタマイズ
+
+この機能を有効にすると、ONTAP 環境に応じて準拠の監視設定をカスタマイズできます。これらの設定により、関連するセキュリティイベントおよび管理アクションがトリガーされます。次の手順を実行します。
+
+. [*カスタマイズ*]をクリックします。Customize Security Dashboard Settings（セキュリティダッシュボード設定のカスタマイズ）ポップアップが表示されます。
+. ONTAP クラスタのカスタム設定を有効または無効にするには、クラスタの一般設定*を展開します。クラスタコンプライアンスをカスタマイズするためのオプションについては、を参照してください link:reference-cluster-compliance-categories.adoc["*クラスタコンプライアンスのカテゴリ*"]。
+. Storage VMのカスタム設定を有効または無効にするには、Storage VMの一般設定*を展開します。Storage VM コンプライアンスをカスタマイズするためのオプションについては、を参照してください link:reference-svm-compliance-categories.adoc["Storage VM コンプライアンスのカテゴリ"]。
+. ONTAP からのAutoSupport メッセージの送信にHTTPS転送を使用するかどうかも指定できます。
+. 認証設定を有効にすると、デフォルトのONTAP 管理者ユーザに対してUnified Managerからアラートが生成されます。
+

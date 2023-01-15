@@ -1,0 +1,49 @@
+---
+section: install-vapp
+title: VMware vSphere システムに Unified Manager をインストールします
+entries:
+- title: Active IQ Unified Manager の概要
+  url: "/install-vapp/concept-introduction-to-unified-manager.html"
+  entries:
+  - title: Unified Manager サーバの機能
+    url: "/install-vapp/concept-what-the-unified-manager-server-does.html"
+  - title: Active IQ Unified Manager 製品ドキュメント
+    url: "/install-vapp/reference-oncommand-unified-manager-product-documentation.html"
+  - title: インストール手順の概要
+    url: "/install-vapp/concept-overview-of-the-installation-sequence-um.html"
+- title: Unified Manager をインストールするための要件
+  url: "/install-vapp/concept-requirements-for-installing-unified-manager.html"
+  entries:
+  - title: 仮想インフラおよびハードウェアシステムの要件
+    url: "/install-vapp/concept-virtual-infrastructure-or-hardware-system-requirements.html"
+  - title: VMware ソフトウェアとインストールの要件
+    url: "/install-vapp/reference-vmware-software-and-installation-requirements.html"
+  - title: サポートされているブラウザ
+    url: "/install-vapp/concept-browser-and-platform-requirements.html"
+  - title: プロトコルとポートの要件
+    url: "/install-vapp/reference-protocol-and-port-requirements.html"
+  - title: ワークシートへの記入
+    url: "/install-vapp/reference-completing-the-worksheet-um.html"
+- title: Unified Manager ソフトウェアのインストール、アップグレード、削除を行います
+  url: "/install-vapp/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html"
+  entries:
+  - title: 導入プロセスの概要
+    url: "/install-vapp/concept-overview-of-the-deployment-process.html"
+  - title: Unified Manager を導入します
+    url: "/install-vapp/task-deploying-unified-manager-vapp.html"
+    entries:
+    - title: Unified Manager インストールファイルをダウンロードします
+      url: "/install-vapp/task-downloading-the-unified-manager-ova-file.html"
+    - title: Unified Manager 仮想アプライアンスの導入
+      url: "/install-vapp/task-deploying-the-unified-manager-virtual-appliance-vapp.html"
+  - title: Unified Manager をアップグレードする
+    url: "/install-vapp/task-upgrading-unified-manager-vapp.html"
+    entries:
+    - title: Unified Manager のアップグレードファイルをダウンロードしています
+      url: "/install-vapp/task-downloading-the-unified-manager-iso-image-vapp.html"
+    - title: Unified Manager 仮想アプライアンスをアップグレードします
+      url: "/install-vapp/task-upgrading-the-unified-manager-virtual-appliance-vapp.html"
+  - title: Unified Manager 仮想マシンを再起動しています
+    url: "/install-vapp/task-restarting-the-unified-manager-virtual-machine.html"
+  - title: Unified Manager を削除しています
+    url: "/install-vapp/task-removing-unified-manager-vapp.html"

@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-health-all-clusters-view.html 
+sidebar: sidebar 
+keywords:  
+summary: Health：All Clustersビューでは、監視しているクラスタの健常性情報を確認できます。 
+---
+= Health：All Clustersビュー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Health：All Clustersビューでは、監視しているクラスタの健常性情報を確認できます。
+
+ビューページ内のオブジェクトは、デフォルトでは、イベントの重大度に基づいてソートされます。重大イベントが報告されたオブジェクトが最初に表示され、そのあとに警告イベントが報告されたオブジェクトが表示されます。これにより、対処が必要な問題を簡単に特定できます。クラスタグリッド内の各クラスタには、ONTAP System Managerへのリンクがあります。このリンクをクリックすると、ONTAP System Managerで同じ保護関係が表示されます。System Managerで表示*メニュー・オプションは、リンクから選択できます。System Manager *での表示リンクは、クラスタの健全性、パフォーマンス、容量の詳細ページでも確認できます。
+
+ページの上部にあるコントロールを使用すると、特定のビュー（健常性、パフォーマンス、容量など）の選択、特定のオブジェクトの検索、フィルタの作成と適用による表示データのリストの絞り込み、ページの列の追加と削除/並べ替え、ページ上のデータをにエクスポートします `.csv`、 `.pdf`または `.xlsx` ファイル。カスタマイズしたページをカスタムビューとして保存し、データのレポートを定期的に生成して E メールで送信するようにスケジュール設定できます。
+
+クラスタセットアップ*ボタンを使用して、を変更したり、Active IQ Unified Manager にクラスタを追加したりできます。Active IQ Unified Manager で使用可能なすべてのクラスタが一覧表示され、各クラスタ名のリンクからONTAP のSystem Managerページにアクセスして簡単に操作できます。
+
+事前定義されたアノテーションにクラスタを関連付けるには、* Annotate *ボタンを使用します。
+
+を参照してください xref:reference-cluster-health-fields.adoc[クラスタの健全性フィールド] このページ上のすべてのフィールドの説明については、を参照してください。

@@ -1,0 +1,14 @@
+---
+permalink: install-windows/concept-installing-upgrading-and-removing-unified-manager-software.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager ソフトウェアのインストール、新しいバージョンへのアップグレード、または Unified Manager アプリケーションの削除を実行できます。 
+---
+= Unified Manager ソフトウェアのインストール、アップグレード、削除を行います
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager ソフトウェアのインストール、新しいバージョンへのアップグレード、または Unified Manager アプリケーションの削除を実行できます。

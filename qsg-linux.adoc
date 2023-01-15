@@ -1,0 +1,58 @@
+---
+permalink: qsg-linux.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, Linux QSG, RHEL QSG, quick installation 
+summary: Linux プラットフォームでの Unified Manager のクイックスタートガイドです。 
+---
+= Linux インストールのクイックスタート手順
+:allow-uri-read: 
+
+
+
+
+== システム要件
+
+* オペレーティングシステム：Red Hat Enterprise LinuxおよびCentOSバージョン7.xおよび8.x（x86_64アーキテクチャに基づく）は、OSインストーラのSoftware SelectionオプションのServer with GUIベース環境を使用してインストールされます
+* RAM ： 12 GB 、 CPU ：合計 9572MHz
+* 空きディスクスペース：/opt/NetApp/dataディレクトリに100GB、ルートパーティションに50GBのディスクスペースがある。/optディレクトリと/var/logディレクトリを個別にマウントする場合は'/opt/1GB '/var/logに16GB '/tmpに10GBの空き領域があることを確認します
+
+
+システム要件の詳細および製品をセキュリティ保護されたサイトにインストールする方法については、を参照してください link:./install-linux/concept-requirements-for-installing-unified-manager.html["Unified Manager をインストールするための要件"] および link:http://mysupport.netapp.com/matrix["互換性マトリックス"]。
+
+
+
+== Active IQ Unified Manager をインストールしています
+
+
+
+=== インストーラをダウンロードします。
+
+. をダウンロードします `ActiveIQUnifiedManager-<version>.zip` インストールパッケージ：
+. インストールファイルをダウンロードしたディレクトリで、次のコマンドを実行します。
+
+
+`# unzip ActiveIQUnifiedManager-<version>.zip`
+
+
+
+=== リポジトリの構成を確認する
+
+Red Hat Enterprise Linux リポジトリまたは CentOS リポジトリを設定する手順はサイトによって異なります。を使用できます `pre_install_check.sh` インストールパッケージに含まれるスクリプトで、オペレーティングシステムの構成を確認します。システムがインターネットに接続されている場合は、 Red Hat Enterprise Linux リポジトリまたは CentOS リポジトリのセットアップ手順が自動的に表示されます。
+
+`# sudo ./pre_install_check.sh`
+
+
+
+=== Unified Manager をインストールします
+
+Unified Managerでは、を使用します `yum` ソフトウェアおよび依存ソフトウェアをインストールするユーティリティ。Red Hat Enterprise Linux または CentOS にはさまざまなイメージがインストールされるため、インストールするパッケージはイメージに含まれるソフトウェアによって異なります。。 `yum` インストールに使用する依存ソフトウェアパッケージは、ユーティリティによって決定されます。依存するソフトウェアパッケージの詳細については、を参照してください link:./install-linux/reference-red-hat-and-centos-software-and-installation-requirements.html["Linux ソフトウェアとインストールの要件"]。
+
+Unified Managerをインストールするには、rootユーザとして、またはを使用して、次のコマンドを実行します `sudo`インストールファイルを解凍したディレクトリで、次の手順を実行します。
+
+`# yum install netapp-um<version>.x86_64.rpm`
+
+または
+
+`% sudo yum install netapp-um<version>.x86_64.rpm`
+
+インストールの完了時に、 Unified Manager Web UI に接続するための情報が表示されます。Web UIに接続できない場合は、を参照してください `README` ポート443の制限の詳細については、ソフトウェアにパッケージ化されたファイルを参照してください。

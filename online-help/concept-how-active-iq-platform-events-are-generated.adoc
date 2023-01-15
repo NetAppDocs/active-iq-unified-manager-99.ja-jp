@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-how-active-iq-platform-events-are-generated.html 
+sidebar: sidebar 
+keywords: Active IQ,event generation 
+summary: Active IQ プラットフォームのインシデントとリスクは、次の図に示すように Unified Manager のイベントに変換されます。 
+---
+= Active IQ プラットフォームイベントの生成方法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Active IQ プラットフォームのインシデントとリスクは、次の図に示すように Unified Manager のイベントに変換されます。
+
+image::../media/aiq-and-um-event-generation.png[aiq および um イベント生成]
+
+このように、 Active IQ プラットフォームで作成されたルールファイルが最新の状態に維持され、クラスタの AutoSupport メッセージが毎日生成され、 Unified Manager がイベントのリストを毎日更新します。

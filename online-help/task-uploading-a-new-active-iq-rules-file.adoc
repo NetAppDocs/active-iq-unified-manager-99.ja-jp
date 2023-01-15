@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-uploading-a-new-active-iq-rules-file.html 
+sidebar: sidebar 
+keywords: Active IQ,rules file 
+summary: Unified Manager は、新しい Active IQ ルールファイルの有無を自動的にチェックし、ある場合は新しいファイルをダウンロードします。ただし、外部ネットワークへのアクセスがないサイトでは、ルールファイルを手動でアップロードする必要があります。 
+---
+= 新しい Active IQ ルールファイルをアップロードしています
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager は、新しい Active IQ ルールファイルの有無を自動的にチェックし、ある場合は新しいファイルをダウンロードします。ただし、外部ネットワークへのアクセスがないサイトでは、ルールファイルを手動でアップロードする必要があります。
+
+
+
+== 作業を開始する前に
+
+* Active IQ イベントレポートを有効にしておく必要があります。
+* ルールファイルをNetApp Support Siteからダウンロードする必要があります。
+
+
+
+
+== このタスクについて
+
+ストレージシステムを確実に保護し、最適な状態で運用を続けるために、月に一度は新しいルールファイルをダウンロードすることを推奨します。ルールファイルは次の場所にあります。 http://mysupport.netapp.com/NOW/public/unified_manager/bin/secure_rules.zip[]
+
+
+
+== 手順
+
+. ネットワークにアクセスできるコンピュータで、NetApp Support Site に移動し、現在のルールをダウンロードします `.zip` ファイル。
+. ルールファイルをセキュリティエリアに持ち出すことができるメディアに転送し、セキュリティエリアのシステムにコピーします。
+. 左側のナビゲーションペインで、 * Storage Management * > * Event Setup * をクリックします。
+. [ * イベントの設定 * ] ページで、 [ * ルールのアップロード * ] ボタンをクリックします。
+. [*ルールのアップロード*（* Upload Rules *）]ダイアログボックスで、ルールに移動して選択します `.zip` ダウンロードしたファイルで、*アップロード*をクリックします。
++
+この処理には数分かかることがあります。
+
+
+
+
+
+== 結果
+
+ルールファイルが Unified Manager サーバに解凍されます。午前 0 時過ぎに管理対象クラスタで AutoSupport ファイルが生成されたあと、 Unified Manager がルールファイルに照らしてクラスタをチェックし、必要に応じて新しいリスクイベントとインシデントイベントを生成します。
