@@ -1480,12 +1480,3 @@ entries:
     url: "/online-help/reference-user-not-found.html"
   - title: 問題で他の認証サービスを使用して LDAP を追加
     url: "/online-help/reference-issue-with-adding-ldap-using-other-authentication-services.html"
-- title: 著作権、商標、機械翻訳
-  url: "/online-help/reference-copyright-and-trademark.html"
-  entries:
-  - title: 著作権
-    url: "/online-help/reference-copyright.html"
-  - title: 商標です
-    url: "/online-help/reference-trademark.html"
-  - title: 機械翻訳
-    url: "/online-help/generic-machine-translation-disclaimer.html"

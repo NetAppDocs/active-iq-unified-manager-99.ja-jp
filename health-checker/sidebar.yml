@@ -9,8 +9,6 @@ entries:
     url: "/health-checker/concept-unified-manager-health-monitoring-features.html"
   - title: ストレージシステムの健常性を管理するために使用される Unified Manager のインターフェイス
     url: "/health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html"
-  - title: Active IQ Unified Manager 製品ドキュメント
-    url: "/health-checker/reference-oncommand-unified-manager-product-documentation.html"
 - title: Unified Manager の一般的な健常性関連のワークフローとタスク
   url: "/health-checker/concept-common-unified-manager-administrative-workflows-and-tasks.html"
   entries:
