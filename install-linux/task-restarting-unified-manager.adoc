@@ -24,6 +24,30 @@ Unified Manager がインストールされている Red Hat Enterprise Linux �
 == 手順
 
 . Unified Manager サービスを再起動するサーバに root ユーザとしてログインします。
-. Unified Manager サービスと関連する MySQL ソフトウェアを次の順序で停止します。
-. Unified Manager を次の順序で開始します。
+. Unified Managerサービスと関連するMySQLサービスを次の順序で停止します。
++
+`systemctl stop ocieau`
 
++
+`systemctl stop ocie`
+
++
+`systemctl stop mysqld`
+
+. MySQLサービスとUnified Managerサービスを次の順序で開始します。
++
+`systemctl start mysqld`
+
++
+`systemctl start ocie`
+
++
+`systemctl start ocieau`
+
+
+
+[NOTE]
+====
+`mysqld` は、MySQLサーバの起動と停止に必要なデーモンプログラムです。
+
+====
