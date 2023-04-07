@@ -50,7 +50,7 @@ summary: 関連付けられているリソース、イベント、スクリプ�
 +
 [NOTE]
 ====
-[除外]タブは'特定のリソースタイプのすべてのリソースを選択した場合にのみ表示されますたとえば'次のように表示されます <<All Volumes>> または <<All Volumes whose name contains '_xyz_'>>。
+[除外]タブは、特定のリソースタイプのすべてのリソースを選択した場合にのみ表示されます。たとえば、<All Volumes> >または<All Volumes whose name contains '_xyz_'> >です。
 
 ====
 

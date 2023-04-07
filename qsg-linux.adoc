@@ -8,6 +8,9 @@ summary: Linux プラットフォームでの Unified Manager のクイックス
 :allow-uri-read: 
 
 
+[role="lead"]
+インストールパッケージをダウンロードして、Red Hat Enterprise LinuxまたはCentOSの物理プラットフォームまたは仮想プラットフォームにUnified Managerをインストールできます。
+
 
 
 == システム要件

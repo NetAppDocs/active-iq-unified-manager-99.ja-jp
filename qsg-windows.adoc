@@ -8,6 +8,9 @@ summary: Linux プラットフォームでの Unified Manager のクイックス
 :allow-uri-read: 
 
 
+[role="lead"]
+インストールパッケージをダウンロードしてUnified Managerをインストールすることで、データストレージの容量、可用性、パフォーマンス、保護の問題を監視してトラブルシューティングすることができます。
+
 
 
 == システム要件

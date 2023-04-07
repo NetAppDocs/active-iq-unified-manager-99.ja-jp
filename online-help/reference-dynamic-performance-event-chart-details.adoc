@@ -22,7 +22,7 @@ summary: 動的なパフォーマンスイベントの場合、イベントの�
 レイテンシのピーク偏差でソートする場合は、システム定義のワークロードがテーブルに表示されません。これは、レイテンシがユーザ定義のワークロードにのみ適用されるためです。レイテンシの値が小さいワークロードはこのテーブルに表示されません。
 
 ====
-動的なパフォーマンスしきい値の詳細については、を参照してください link:reference-performance-event-analysis-and-notification.adoc["イベントとは"]。Unified Managerでワークロードをランク付けしてソート順序を決定する方法については、を参照してください xref:concept-how-unified-manager-determines-the-performance-impact-for-an-incident.adoc[Unified Manager がイベントによるパフォーマンスへの影響を判定する仕組み]。
+動的なパフォーマンスしきい値の詳細については、を参照してください xref:reference-performance-event-analysis-and-notification.adoc[イベントとは]。Unified Managerでワークロードをランク付けしてソート順序を決定する方法については、を参照してください xref:concept-how-unified-manager-determines-the-performance-impact-for-an-incident.adoc[Unified Manager がイベントによるパフォーマンスへの影響を判定する仕組み]。
 
 グラフ内のデータには、イベントが最後に分析されるまでの 24 時間のパフォーマンス統計が示されます。各ワークロードの実際の値と想定値は、ワークロードがイベントに関連した時刻に基づいています。たとえば、イベントの検出後にワークロードがイベントに関連した可能性があるため、そのパフォーマンス統計がイベント検出時の値と一致しないことがあります。デフォルトでは、レイテンシのピーク（最大）偏差でワークロードがソートされます。
 
@@ -39,7 +39,7 @@ Unified Manager では 5 分ごとのパフォーマンスとイベントの履�
 
 ** * コンポーネント使用状況列 *
 +
-競合状態のクラスタコンポーネントのワークロードの使用量に関する詳細が表示されます。グラフでは、実際の使用量は青い線で表示されます。検出時刻から最後に分析された時刻までのイベント期間が赤いバーで強調表示されます。詳細については、を参照してください link:reference-workload-performance-measurement-values.adoc["ワークロードのパフォーマンスの測定値"]。
+競合状態のクラスタコンポーネントのワークロードの使用量に関する詳細が表示されます。グラフでは、実際の使用量は青い線で表示されます。検出時刻から最後に分析された時刻までのイベント期間が赤いバーで強調表示されます。詳細については、を参照してください xref:reference-workload-performance-measurement-values.adoc[ワークロードのパフォーマンスの測定値]。
 
 +
 [NOTE]

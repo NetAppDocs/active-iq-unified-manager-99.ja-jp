@@ -32,7 +32,7 @@ summary: イベントの詳細ページでは、選択したイベントの重�
 動的なパフォーマンスイベントについて、クラスタの論理コンポーネントと物理コンポーネントを表すアイコンが表示されます。コンポーネントが競合状態にある場合は、アイコンが赤い丸で強調表示されます。
 
 +
-を参照してください link:concept-cluster-components-and-why-they-can-be-in-contention.adoc["クラスタコンポーネントとその競合要因"] ここに表示されている構成要素の概要 の場合。
+を参照してください xref:concept-cluster-components-and-why-they-can-be-in-contention.adoc[クラスタコンポーネントとその競合要因] ここに表示されている構成要素の概要 の場合。
 
 
 

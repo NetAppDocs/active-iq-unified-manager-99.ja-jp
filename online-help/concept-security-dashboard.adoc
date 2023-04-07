@@ -27,8 +27,8 @@ ONTAP クラスタ、Storage VM、およびボリュームのセキュリティ�
 この機能を有効にすると、ONTAP 環境に応じて準拠の監視設定をカスタマイズできます。これらの設定により、関連するセキュリティイベントおよび管理アクションがトリガーされます。次の手順を実行します。
 
 . [*カスタマイズ*]をクリックします。Customize Security Dashboard Settings（セキュリティダッシュボード設定のカスタマイズ）ポップアップが表示されます。
-. ONTAP クラスタのカスタム設定を有効または無効にするには、クラスタの一般設定*を展開します。クラスタコンプライアンスをカスタマイズするためのオプションについては、を参照してください link:reference-cluster-compliance-categories.adoc["*クラスタコンプライアンスのカテゴリ*"]。
-. Storage VMのカスタム設定を有効または無効にするには、Storage VMの一般設定*を展開します。Storage VM コンプライアンスをカスタマイズするためのオプションについては、を参照してください link:reference-svm-compliance-categories.adoc["Storage VM コンプライアンスのカテゴリ"]。
+. ONTAP クラスタのカスタム設定を有効または無効にするには、クラスタの一般設定*を展開します。クラスタコンプライアンスをカスタマイズするためのオプションについては、を参照してください xref:reference-cluster-compliance-categories.adoc[クラスタコンプライアンスのカテゴリ]。
+. Storage VMのカスタム設定を有効または無効にするには、Storage VMの一般設定*を展開します。Storage VM コンプライアンスをカスタマイズするためのオプションについては、を参照してください xref:reference-svm-compliance-categories.adoc[Storage VM コンプライアンスのカテゴリ]。
 . ONTAP からのAutoSupport メッセージの送信にHTTPS転送を使用するかどうかも指定できます。
 . 認証設定を有効にすると、デフォルトのONTAP 管理者ユーザに対してUnified Managerからアラートが生成されます。
 
