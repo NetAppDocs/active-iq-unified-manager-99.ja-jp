@@ -33,7 +33,7 @@ Unified Managerは次のエディションのWindowsにインストールでき�
 
 以前のリリースでサポートされていたWindows Server 2012はサポート対象外になりました。サポートされている Windows のバージョンの最新のリストについては、 Interoperability Matrix を参照してください。
 
-http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+http://["mysupport.netapp.com/matrix"]
 
 Unified Manager のみを実行する専用のサーバを用意する必要があります。他のアプリケーションをサーバにインストールしないでください。
 

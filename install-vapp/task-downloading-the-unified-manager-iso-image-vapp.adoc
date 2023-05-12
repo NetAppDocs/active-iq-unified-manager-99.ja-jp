@@ -23,7 +23,7 @@ NetApp Support Siteのログインクレデンシャルが必要です。
 
 == 手順
 
-. NetApp Support Siteにログインします。 https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp Support Site"]
+. NetApp Support Siteにログインします。 https://["NetApp Support Site"]
 . VMware vSphereでのUnified Managerのアップグレードに使用する*ダウンロードページに移動します。
 . をダウンロードします `.iso` イメージをアップグレードし、vSphere Clientからアクセス可能なローカルまたはネットワークのディレクトリに保存します。
 . チェックサムを確認して、ソフトウェアが正しくダウンロードされたことを確認します。

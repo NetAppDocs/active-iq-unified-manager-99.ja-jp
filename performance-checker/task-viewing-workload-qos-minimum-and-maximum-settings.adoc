@@ -82,4 +82,4 @@ IOPS/TB の下限（ QoS 想定）を表示する
 
 QoS 設定の調整の詳細については、 ONTAP 9 パフォーマンス管理パワーガイドを参照してください。
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["ONTAP 9 パフォーマンス管理パワーガイド"]
+http://["ONTAP 9 パフォーマンス管理パワーガイド"]

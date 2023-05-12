@@ -37,6 +37,6 @@ SCP または SFTP をサポートするツールを使用する必要があり�
 
 * 関連情報 *
 
-https://filezilla-project.org/["Filezilla - https://filezilla-project.org/"]
+https://["Filezilla - https://filezilla-project.org/"]
 
-http://winscp.net["WinSCP - http://winscp.net"]
+http://["WinSCP - http://winscp.net"]

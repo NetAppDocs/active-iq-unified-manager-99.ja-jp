@@ -43,7 +43,7 @@ Windows の管理者権限が必要です。
  a| 
 Microsoft の次のトピックの手順に従います。
 
-https://technet.microsoft.com/en-us/library/cc771473(v=ws.11).aspx["基本ボリュームを拡張します"]
+https://["基本ボリュームを拡張します"]
 
 
 
@@ -52,7 +52,7 @@ https://technet.microsoft.com/en-us/library/cc771473(v=ws.11).aspx["基本ボリ
  a| 
 Microsoft の次のトピックの手順に従います。
 
-https://msdn.microsoft.com/en-us/library/dd163551.aspx["ハードディスクドライブの追加"]
+https://["ハードディスクドライブの追加"]
 
 
 
@@ -61,6 +61,6 @@ https://msdn.microsoft.com/en-us/library/dd163551.aspx["ハードディスクド
  a| 
 VMware の次のトピックの手順に従います。
 
-https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1004071["ディスクパーティションのサイズを拡張する"]
+https://["ディスクパーティションのサイズを拡張する"]
 
 |===

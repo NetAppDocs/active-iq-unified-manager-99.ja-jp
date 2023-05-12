@@ -13107,4 +13107,5 @@
   <block id="a745c95b049f8f0921c2fcc8baec42c6" category="paragraph">この変更が完了したら、ユーザは Unified Manager Web UI にアクセスするために、 URL に新しいポート番号を追加する必要があります。たとえば、 + https://host.company.com:1234+ 、 + https://12.13.14.15:1122+ 、 + https://[2001:db8:0:1]:2123+ のように指定します。</block>
   <block id="74eaa85433946affb1737b2598fcdd35" category="paragraph">インストールパッケージをダウンロードしてUnified Managerをインストールすることで、データストレージの容量、可用性、パフォーマンス、保護の問題を監視してトラブルシューティングすることができます。</block>
   <block id="d37bfa9087091a2643ebb8f003e74798" category="paragraph">インストールパッケージをダウンロードして、Red Hat Enterprise LinuxまたはCentOSの物理プラットフォームまたは仮想プラットフォームにUnified Managerをインストールできます。</block>
+  <block id="c2c8552adcdf172b368e6fec79ced7cb" category="list-text">Windows管理者としてPowerShellまたはコマンドプロンプトを起動します。</block>
 </blocks>
