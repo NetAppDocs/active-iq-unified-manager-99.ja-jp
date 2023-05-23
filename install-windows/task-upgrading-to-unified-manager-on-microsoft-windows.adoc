@@ -66,7 +66,7 @@ Unified Manager を OnCommand Workflow Automation のインスタンスとペア
 
 == 手順
 
-. NetApp Support Site にログインし、Unified Managerの*ダウンロードページに移動します。 https://["NetApp Support Site"]
+. NetApp Support Site にログインし、Unified Managerの*ダウンロードページに移動します。 https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp Support Site"]
 . 必要なバージョンの Unified Manager を選択し、エンドユーザライセンス契約（ EULA ）に同意します。
 . Unified Manager Windows インストールファイルを Windows システムのターゲットディレクトリにダウンロードします。
 . Unified Managerインストーラの実行ファイルを右クリックして実行します `(.exe)` 管理者としてファイルを作成します。

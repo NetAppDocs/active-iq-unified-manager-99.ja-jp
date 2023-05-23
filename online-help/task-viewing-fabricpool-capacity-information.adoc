@@ -85,4 +85,4 @@ summary: クラスタ、アグリゲート、およびボリュームの FabricP
 
 FabricPool アグリゲートの詳細については、 ONTAP 9 ディスクとアグリゲートパワーガイドを参照してください。
 
-http://["ONTAP 9 ディスクとアグリゲートパワーガイド"]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html["ONTAP 9 ディスクとアグリゲートパワーガイド"]

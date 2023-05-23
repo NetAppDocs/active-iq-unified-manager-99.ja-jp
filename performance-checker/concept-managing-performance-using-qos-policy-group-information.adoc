@@ -15,4 +15,4 @@ Unified Manager では、監視しているすべてのクラスタで使用可�
 
 QoS 設定の調整の詳細については、 ONTAP 9 パフォーマンス管理パワーガイドを参照してください。
 
-http://["ONTAP 9 パフォーマンス管理パワーガイド"]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-perf-mon/home.html["ONTAP 9 パフォーマンス管理パワーガイド"]
