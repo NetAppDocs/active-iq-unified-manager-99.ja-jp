@@ -1,0 +1,44 @@
+---
+indexpage:
+  title: Active IQ Unified Manager のドキュメント
+  summary: Active IQ Unified Manager 9.9のドキュメント
+  keywords: activeiq unified manager, install, vmware vsphere, linux, windows
+  lead: Active IQ Unified Manager （Unified Manager、旧OnCommand Unified Manager）を使用すると、ONTAP
+    ストレージシステムの健全性とパフォーマンスを1つのインターフェイスから監視および管理できます。このドキュメントライブラリには、バージョン9.9の情報が含まれています。
+  tiles:
+  - title: はじめに
+    links:
+    - title: リリースノート
+      url: release-notes.html
+    - title: VMware vSphere のクイックスタートインストール
+      url: qsg-vapp.html
+    - title: Linux のクイックスタートインストール
+      url: qsg-linux.html
+    - title: Windows のクイックスタートインストール
+      url: qsg-windows.html
+  - title: Unified Managerをインストールして設定
+    links:
+    - title: VMware vSphereシステムへのインストールとアップグレード
+      url: install-vapp/concept-requirements-for-installing-unified-manager.html
+    - title: Linuxシステムでのインストールとアップグレード
+      url: install-linux/concept-requirements-for-installing-unified-manager.html
+    - title: Windowsシステムでのインストールとアップグレード
+      url: install-windows/concept-requirements-for-installing-unified-manager.html
+    - title: Unified Manager を設定します
+      url: config/concept-configuring-unified-manager.html
+  - title: パフォーマンスの監視
+    links:
+    - title: パフォーマンスしきい値
+      url: performance-checker/concept-managing-performance-thresholds.html
+    - title: クラスタのパフォーマンス
+      url: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html
+    - title: QoS ポリシーグループ
+      url: performance-checker/concept-managing-performance-using-qos-policy-group-information.html
+  - title: リソースの追加
+    links:
+    - title: Unified Manager のビデオ
+      url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7mp3jFSg0IJgo3oeDQRY-Gl
+    - title: Unified Manager のブログです
+      url: https://www.netapp.com/blog/#q=active%20iq%20unified%20manager&t=Blogs&sort=%40publish_date_mktg%20descending&layout=card&f:@facet_language_mktg=[English]
+    - title: Active IQ Unified Manager の最新バージョンのドキュメント
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/index.html
