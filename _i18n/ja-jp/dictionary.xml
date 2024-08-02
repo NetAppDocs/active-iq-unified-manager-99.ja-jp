@@ -2978,7 +2978,6 @@
   <block id="56bad51d0fd70713223e857396803caa" category="paragraph">Unified Manager はメモリの少ないシステムにもインストールできますが、推奨される 12GB の RAM があれば最適なパフォーマンスが保証されるだけでなく、拡張時にクラスタやストレージオブジェクトの追加にも対応できます。Unified Manager を導入する VM にはメモリの上限などを設定しないでください。また、ソフトウェアがシステムで割り当てられているメモリを利用できなくなる機能（バルーニングなど）は有効にしないでください。</block>
   <block id="118be0e1a3c862556b2a6426bdcd24de" category="paragraph">また、 1 つの Unified Manager インスタンスで監視できるノードの数には上限があり、この上限を超える場合は 2 つ目の Unified Manager インスタンスをインストールする必要があります。詳細については、 _ ベストプラクティスガイド _ を参照してください。</block>
   <block id="9650789293045a87cc14a47729b5ebfc" category="inline-link">テクニカルレポート 4621 ：『 Unified Manager Best Practices Guide 』</block>
-  <block id="badef135127b32313f0e0eebe283472f" category="paragraph"><block ref="badef135127b32313f0e0eebe283472f" category="inline-link-rx"></block></block>
   <block id="ccd350b03208f21a01e8434aa29bf22c" category="paragraph">メモリページのスワッピングは、システムや管理アプリケーションのパフォーマンスに悪影響を及ぼします。CPU リソースがホスト全体で競合して使用できなくなると、パフォーマンスが低下する可能性があります。</block>
   <block id="eeedd0b411cf8b8d426d2fb1abee2797" category="section-title">専用使用の要件</block>
   <block id="c74cdaf0de603354b9d68a1b99f50e57" category="paragraph">Unified Manager をインストールする物理システムまたは仮想システムは、他のアプリケーションとは共有せず、 Unified Manager 専用にする必要があります。他のアプリケーションにシステムリソースが消費されることで、 Unified Manager のパフォーマンスが大幅に低下する可能性があります。</block>
@@ -4370,7 +4369,6 @@
   <block id="aa5ea9a79b8363872969fe3e4d5ce9b3" category="paragraph">Unified Manager には、『 ONTAP 9_ NetApp Security Hardening Guide for ONTAP 』に定義されている推奨事項を基に、 クラスタ、 Storage Virtual Machine （ SVM ）、およびボリュームがどの程度セキュアであるかを示すダッシュボードが用意されています。</block>
   <block id="e60416fe8f102037593aec660b785842" category="paragraph">セキュリティダッシュボードの目的は、 ONTAP クラスタがネットアップ推奨のガイドラインに従っていない領域を提示して、潜在的な問題を修正できるようにすることです。ほとんどの場合、問題は ONTAP System Manager または ONTAP CLI を使用して解決します。組織がすべての推奨事項に従うとは限らないため、場合によっては変更を加える必要がありません。</block>
   <block id="0303e15cb5131cd4b937c60c3de7bb42" category="inline-link">ONTAP 9 セキュリティ設定ガイド</block>
-  <block id="60443e5478cdf6c85aba4b527880b533" category="paragraph">を参照してください<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block> 詳細な推奨事項と解決策については、 TR-4569 を参照してください。</block>
   <block id="349b5120a9ed5730c85dd33d0233bfa1" category="paragraph">Unified Manager は、セキュリティステータスを報告するだけでなく、セキュリティ違反があるクラスタまたは SVM に対してセキュリティイベントを生成します。これらの問題はイベント管理インベントリページで追跡できます。また、イベントにアラートを設定して、新たなセキュリティイベントが発生したときにストレージ管理者が通知を受け取るようにすることができます。</block>
   <block id="cdeab4d80478ad44d15f973c1a3ce435" category="summary">AutoSupport ページでは、事前定義されたオンデマンドの AutoSupport メッセージをテクニカルサポートチームに送信して、環境の正しい運用や環境の整合性の維持に役立てることができます。AutoSupport はデフォルトで有効になっており、 NetAppActive IQ のメリットを活用するためには無効にしないでください。</block>
   <block id="a26cbacfd0a52d4a051db547e4dae143" category="doc">テクニカルサポートに AutoSupport メッセージとサポートバンドルを送信する</block>
@@ -4718,7 +4716,6 @@
   <block id="3a215c293d531341a13e54d1b4f767d8" category="list-text">ピアクラスタの通信が暗号化されているかどうか</block>
   <block id="34c28c126e19226f9ae33dc5640078bb" category="list-text">Storage VM の監査ログが有効になっているかどうか</block>
   <block id="8083dc3f1ad1356d39b70d2189b04945" category="list-text">ボリュームでソフトウェアまたはハードウェアの暗号化が有効になっているかどうか</block>
-  <block id="eab70e6fe7e77946b94068e68a8ce442" category="paragraph">コンプライアンスのカテゴリおよびのトピックを参照してください<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block> を参照してください。</block>
   <block id="c59a5985bd2d618db813147ff21b648b" category="paragraph">Active IQ プラットフォームから報告されるアップグレードイベントもセキュリティイベントとみなされます。これらのイベントは、 ONTAP ソフトウェア、ノードファームウェア、またはオペレーティングシステムソフトウェア（セキュリティアドバイザリ用）のアップグレードが必要な問題を示します。これらのイベントは [ セキュリティ ] パネルには表示されませんが、 [ イベント管理 ] インベントリページから確認できます。</block>
   <block id="b54f31dd6204fb4eea238c710ce88c52" category="summary">いずれかの ONTAP クラスタで設定済みのボリュームでの Active IQ Unified Manager Snapshot バックアップのデスティネーションの場所を設定し、メンテナンスコンソールを使用して場所を定義する必要があります。</block>
   <block id="799bf19e536ac1b86d71b01a9e77ae44" category="doc">Windows Snapshot バックアップのデスティネーションの指定</block>
@@ -4902,7 +4899,6 @@
   <block id="001cdcc1bced815dbb889c31d496a91c" category="list-text">セキュリティ * パネルの右矢印をクリックします。</block>
   <block id="21b404ba083f7cb1aacb4498842a979b" category="paragraph">Security ページには、次の情報が表示されます。</block>
   <block id="1113c5580efb5e128133e0c849ea6b54" category="list-text">各クラスタで使用されているクラスタ認証方式</block>
-  <block id="a4deeec5e2b40be9ffab412cfc04266c" category="list-text">を参照してください<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block> すべてのクラスタ、 SVM 、およびボリュームを、ネットアップのセキュリティに関する推奨事項に準拠させていただく方法については、を参照してください。</block>
   <block id="2e95339e9dbe7207255809b48fd3f8be" category="summary">Unified Manager GUI にアクセスできない場合は、必要に応じてメンテナンスコンソールから SAML 認証を無効にすることができます。この状況は、設定に誤りがある場合や IdP にアクセスできない場合に発生します。</block>
   <block id="742cb249fa8cd9421fb803e742e1d7e1" category="doc">メンテナンスコンソールから SAML 認証を無効にする</block>
   <block id="ce4cb1454337774a262ad6d82cc7c302" category="paragraph">SAML 認証が無効な場合は、 Active Directory や LDAP などの設定済みのディレクトリサービスプロバイダがサインオン認証を実行します。設定されているリモートユーザに加え、ローカルユーザとメンテナンスユーザもグラフィカルユーザインターフェイスにアクセスできるようになります。</block>
@@ -5308,7 +5304,6 @@
   <block id="64bd5015546813c113a50d1d816a2fce" category="list-text">* パフォーマンス *</block>
   <block id="28a28996e5e10ee62864b322cf2e8851" category="paragraph">パフォーマンスイベントは、監視対象のストレージオブジェクトにおけるデータストレージの入力速度や取得速度に悪影響を及ぼす可能性がある、クラスタのリソース、設定、または処理の状況について通知するイベントです。</block>
   <block id="e28ab1dac11a8a6babec11d768ded66a" category="paragraph">保護イベントは、 SnapMirror 関係に関するインシデントやリスク、デスティネーションの容量の問題、 SnapVault 関係の問題、または保護ジョブの問題について通知するイベントです。セカンダリボリュームおよび保護関係をホストする ONTAP オブジェクト（アグリゲート、ボリューム、および SVM ）は、いずれもこの影響領域に分類されます。</block>
-  <block id="a9518f09019b40e9f9d0808f91e32925" category="paragraph">セキュリティイベントは、で定義されたパラメータに基づいて、 ONTAP クラスタ、 Storage Virtual Machine （ SVM ）、およびボリュームのセキュリティがどの程度確保されるかを通知します<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block>。</block>
   <block id="26426dd05fca05471c34919c8d351e36" category="paragraph">また、この領域には、 Active IQ プラットフォームから報告されるアップグレードイベントも含まれます。</block>
   <block id="bac22306a2632f2464a7bc7eb26d21c6" category="summary">このワークフローでは、ストレージフェイルオーバーインターコネクトリンクの停止状態をスキャンし、評価して解決する方法の例を示します。このシナリオでは、管理者が、ノードで ONTAP バージョンのアップグレードを開始する前に Unified Manager を使用してストレージフェイルオーバーのリスクがないかをスキャンします。</block>
   <block id="66deb8126d9a4e2c908a3654f4ece414" category="doc">ストレージフェイルオーバーインターコネクトリンクの停止状態をスキャンして解決しています</block>
@@ -8662,7 +8657,6 @@
   <block id="dbbb25505b3a4586da3364432f2256b9" category="paragraph">ONTAP System Manager または ONTAP コマンドを使用して、 Flash Cache がインストールされて有効になっているかを確認し、有効になっていない場合は有効にすることができます。次のコマンドは、Flash Cacheが特定のノードで有効になっているかどうかを示します。<block ref="48de88639c7fbb304293e385f1577ff8" prefix=" " category="inline-code"></block></block>
   <block id="4226c3da2a5d50e1c8abfdfbf9bd3780" category="paragraph">Flash Cache とその使用要件については、次のテクニカルレポートを参照してください。</block>
   <block id="4d594fa378085e019a42ca73e740986c" category="inline-link">テクニカルレポート 3832 ：『 Flash Cache Best Practices Guide 』</block>
-  <block id="e9f146d71f531c29c1d0c53c51f7c325" category="paragraph"><block ref="e9f146d71f531c29c1d0c53c51f7c325" category="inline-link-rx"></block></block>
   <block id="ed46215834ece9df6f6e928ec99fb8b8" category="summary">既存のクラスタを追加して、そのクラスタを監視し、健全性、容量、構成、パフォーマンスに関する情報を取得できます。</block>
   <block id="0130853463bbe8886a65910adc3f54b2" category="doc">Add Clusterダイアログボックス</block>
   <block id="67417a585c57d841c0ff1ea84e382fcd" category="paragraph">次の値を指定してクラスタを追加できます。</block>
@@ -12213,7 +12207,6 @@
   <block id="ce0a654c3b5c722340279eb742f2247d" category="paragraph">単一のクラスタを表示している場合、このパネルには、特定の範囲の IOPS で現在実行されているワークロードの総数、およびグラフにカーソルを合わせると各ディスクタイプの数が表示されます。</block>
   <block id="db3ec3afcbb3550eaf2d4f9224d2c3b6" category="paragraph">このパネルには、各パフォーマンスサービスレベル（ PSL ）ポリシーに割り当てられている準拠ワークロードと非準拠ワークロードの総数が表示されます。また、 PSL が割り当てられていないアグリゲートの数も表示されます。棒グラフをクリックすると、そのポリシーに割り当てられている準拠ワークロードがワークロードページに表示されます。棒グラフの横に表示された数字をクリックすると、そのポリシーに割り当てられている準拠ワークロードと非準拠ワークロードが表示されます。</block>
   <block id="ef4fe1b8268d44620ad24ec7733645fd" category="list-text">* セキュリティパネル *</block>
-  <block id="9a268bcb23ec0f95e8394deaee691d7b" category="paragraph">すべてのクラスタを表示している場合、このパネルには、準拠および非準拠のクラスタ数、準拠および非準拠の Storage VM 数、暗号化されて暗号化されているボリュームとされていないボリュームの数が表示されます。コンプライアンスは、に基づいています<block ref="ec993f435ccd69f53c3f46dcd44c6bdd" category="inline-link-rx"></block>。パネル上部の右矢印をクリックして、 Security ページですべてのクラスタのセキュリティの詳細を表示します。</block>
   <block id="e628bbecfc1209b863d3db82601b635c" category="paragraph">単一のクラスタを表示している場合は、このパネルには、クラスタが準拠しているかどうか、準拠および非準拠の Storage VM 数、暗号化されているボリュームとされていないボリュームの数が表示されます。パネル上部の右矢印をクリックして、 Security ページでクラスタのセキュリティの詳細を表示します。</block>
   <block id="780ec40cc715a112c118d12f06bd508f" category="paragraph">すべてのクラスタを表示している場合、 IOPS 、スループット（ MBps ）、または使用済み物理容量が大きい順にクラスタを表示できます。</block>
   <block id="56301f99c72abc61a51cf04b7c012878" category="paragraph">単一のクラスタを表示している場合は、 IOPS 、スループット（ MBps ）、または使用済み論理容量が大きい順にワークロードを表示できます。</block>
@@ -12865,7 +12858,6 @@
   <block id="7c48a0120101491ea5a781058b5716de" category="doc">ディスクを追加してアグリゲートレイアウトを再構築する</block>
   <block id="fdf3b7352c190d213c24db064ec3a78e" category="paragraph">イベントの詳細ページにシステム定義のしきい値イベントが表示された場合、問題があるアグリゲートの名前がイベント概要のテキストに表示されます。このアグリゲートに対して、ディスクを追加してデータを再構築できます。</block>
   <block id="c993772a65e087ac68acfde3645c3287" category="inline-link">テクニカルレポート 3838 ：『 Storage Subsystem Configuration Guide 』</block>
-  <block id="0379ced083df169219dc62cc5068b75c" category="paragraph"><block ref="0379ced083df169219dc62cc5068b75c" category="inline-link-rx"></block></block>
   <block id="877f5e27a442690f512bdd4fa77d8cb6" category="summary">Unified Manager を使用して、 MetroCluster 構成のクラスタとそのコンポーネントの運用の健常性を確認できます。Unified Manager によって検出されたパフォーマンスイベントにクラスタが関連している場合は、健常性ステータスを確認することで、ハードウェアまたはソフトウェアの問題がイベントの一因となったかどうかを判断できます。</block>
   <block id="5e9e3cac8906fbac9ab062f3f912efc9" category="doc">MetroCluster 構成のクラスタの健常性を確認しています</block>
   <block id="1e86f8bde1a87a2deac3175345884436" category="list-text">MetroCluster 構成のパフォーマンスイベントを分析し、関連するクラスタの名前を取得しておく必要があります。</block>
@@ -13115,4 +13107,12 @@
   <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Unified Manager のビデオ</block>
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Unified Manager のブログです</block>
   <block id="c0fd3a67a0f9d526734eae8cf8142cb4" category="sidebar">Active IQ Unified Manager の最新バージョンのドキュメント</block>
+  <block id="a5c178ca0adb1a0269f3bd998293dd38" category="paragraph">詳細な推奨事項と解決策については、（TR-4569）を参照してください<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block> 。</block>
+  <block id="672333e5623d0406e27edefd4a600c08" category="paragraph">詳細については、準拠カテゴリに関するトピックおよびを参照してください<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block> 。</block>
+  <block id="1af9d8b43c265c6a772871d91469520e" category="paragraph">セキュリティイベントは、で定義されたパラメータに基づいて、ONTAPクラスタ、Storage Virtual Machine（SVM）、およびボリュームがどの程度セキュアであるかを通知します<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block>。</block>
+  <block id="356446276fe0b8850474bcda6d3dbdb0" category="list-text">すべてのクラスタ、SVM、およびボリュームをNetAppのセキュリティに関する推奨事項に準拠させる方法については、を参照してください<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block> 。</block>
+  <block id="ee26087a8b7ec790988603a3298c45f3" category="paragraph"><block ref="ee26087a8b7ec790988603a3298c45f3" category="inline-link-rx"></block></block>
+  <block id="06c70b026e4d10bfcd7be2ebfa770d1c" category="paragraph"><block ref="06c70b026e4d10bfcd7be2ebfa770d1c" category="inline-link-rx"></block></block>
+  <block id="293b7a0c506af87a1e3b4fb005b0232e" category="paragraph">すべてのクラスタを表示している場合、このパネルには、準拠および非準拠のクラスタ数、準拠および非準拠の Storage VM 数、暗号化されて暗号化されているボリュームとされていないボリュームの数が表示されます。準拠はに基づいてい<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block>ます。パネル上部の右矢印をクリックして、 Security ページですべてのクラスタのセキュリティの詳細を表示します。</block>
+  <block id="796f4a9be8e525f7e4d64c24bac529c9" category="paragraph"><block ref="796f4a9be8e525f7e4d64c24bac529c9" category="inline-link-rx"></block></block>
 </blocks>
