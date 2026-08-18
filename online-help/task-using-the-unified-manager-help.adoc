@@ -15,6 +15,7 @@ summary: このヘルプには、 Active IQ Unified Manager に含まれてい�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 Unified Manager のユーザインターフェイスの各タブおよびメニューバーからヘルプを表示できます。
@@ -23,6 +24,7 @@ Unified Manager のユーザインターフェイスの各タブおよびメニ�
 
 
 
+[[choices]]
 == 選択肢
 
 * 特定のフィールドまたはパラメータの詳細を確認するには、をクリックします image:../media/helpicon-um60.gif["アイコンをクリックすると、状況依存ヘルプが表示されます"]。

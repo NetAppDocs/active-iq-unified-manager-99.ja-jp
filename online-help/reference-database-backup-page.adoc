@@ -17,6 +17,7 @@ Database Backupページには、Unified Managerで作成されたバックア�
 
 
 
+[[list-view]]
 == リストビュー
 
 リストビューには、使用可能なバックアップファイルに関する情報が表示されます。
@@ -37,6 +38,7 @@ Database Backupページには、Unified Managerで作成されたバックア�
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 * *バックアップ設定*

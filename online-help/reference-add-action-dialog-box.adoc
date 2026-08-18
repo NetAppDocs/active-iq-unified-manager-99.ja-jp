@@ -38,6 +38,7 @@ Unified Managerで現在サポートされているアクションタイプは�
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 * * 追加 * 。

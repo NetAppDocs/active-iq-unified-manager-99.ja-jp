@@ -15,18 +15,21 @@ Unified Manager のインストールファイルをNetApp Support Siteからダ
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 NetApp Support Siteのログインクレデンシャルが必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 インストールファイルはです `OVA` 仮想アプライアンスで設定されるUnified Managerソフトウェアを含むファイル。
 
 
 
+[[steps]]
 == 手順
 
 . NetApp Support Site にログインし、Unified Managerの*ダウンロードページに移動します。 https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp Support Site"]

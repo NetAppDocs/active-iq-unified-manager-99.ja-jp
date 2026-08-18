@@ -15,12 +15,14 @@ Workflow Automation が不要となった場合は、 Unified Manager から OnC
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 アプリケーション管理者またはストレージ管理者のロールが必要です。
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、左の [ セットアップ ] メニューの [ 一般 *>* Workflow Automation * ] をクリックします。

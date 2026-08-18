@@ -15,12 +15,14 @@ summary: ストレージオブジェクトに適用されるグループルー�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 アプリケーション管理者またはストレージ管理者のロールが必要です。
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage Management * > * Groups * をクリックします。
@@ -33,6 +35,7 @@ summary: ストレージオブジェクトに適用されるグループルー�
 
 
 
+[[example-of-configuring-a-condition-for-a-group-rule]]
 == グループルールの条件を設定する例
 
 オブジェクトタイプが SVM で、オブジェクト名に「 'vm_data' 」が含まれている場合は、条件を考慮します。

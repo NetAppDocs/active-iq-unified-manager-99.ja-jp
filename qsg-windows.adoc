@@ -13,6 +13,7 @@ summary: Linux プラットフォームでの Unified Manager のクイックス
 
 
 
+[[system-requirements]]
 == システム要件
 
 * オペレーティングシステム：Microsoft Windows Server 2016および2019の64ビットStandard EditionおよびDatacenter Edition次の言語がサポートされています。
@@ -31,10 +32,12 @@ summary: Linux プラットフォームでの Unified Manager のクイックス
 
 
 
+[[installing-active-iq-unified-manager]]
 == Active IQ Unified Manager をインストールしています
 
 
 
+[[download-the-installer]]
 === インストーラをダウンロードします。
 
 . をダウンロードします `ActiveIQUnifiedManager-<version>.exe` インストールパッケージ：
@@ -43,6 +46,7 @@ summary: Linux プラットフォームでの Unified Manager のクイックス
 
 
 
+[[install-unified-manager]]
 === Unified Manager をインストールします
 
 Unified Manager をインストールするには、 Microsoft .NET 4.5.2 以降のバージョンがインストールされている必要があります。インストールプロセスの一環として、 Unified Manager は必要に応じて他のサードパーティパッケージをインストールします。依存するソフトウェアパッケージの詳細については、を参照してください link:./install-windows/reference-windows-software-and-installation-requirements.html["Windows ソフトウェアとインストールの要件"]。

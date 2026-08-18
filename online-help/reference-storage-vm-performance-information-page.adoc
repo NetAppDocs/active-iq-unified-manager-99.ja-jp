@@ -15,6 +15,7 @@ Storage VM /パフォーマンス情報ページを使用して、SVMの設定�
 
 
 
+[[storage-vm-attributes]]
 == Storage VMの属性
 
 * * IP アドレス *

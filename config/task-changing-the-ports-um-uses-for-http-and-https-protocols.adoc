@@ -15,6 +15,7 @@ Unified Manager が HTTP および HTTPS プロトコルに使用するデフォ
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 Unified Manager サーバのメンテナンスコンソールへのログインが許可されているユーザ ID とパスワードが必要です。
@@ -26,12 +27,14 @@ Mozilla Firefox または Google Chrome ブラウザでは、安全でないと�
 ====
 
 
+[[about-this-task]]
 == このタスクについて
 
 ポートを変更すると Unified Manager のインスタンスが自動的に再起動されるため、システムを短時間停止しても問題のないタイミングであることを確認してください。
 
 
 
+[[steps]]
 == 手順
 
 . SSH を使用して、 Unified Manager ホストにメンテナンスユーザとしてログインします。
@@ -53,6 +56,7 @@ Unified Manager メンテナンスコンソールのプロンプトが表示さ�
 
 
 
+[[results]]
 == 結果
 
 この変更が完了したら、ユーザは Unified Manager Web UI にアクセスするために、 URL に新しいポート番号を追加する必要があります。たとえば、 + https://host.company.com:1234+ 、 + https://12.13.14.15:1122+ 、 + https://[2001:db8:0:1]:2123+ のように指定します。

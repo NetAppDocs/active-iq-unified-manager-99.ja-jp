@@ -15,18 +15,21 @@ Unified Managerをダウンロードする必要があります``.zip`` ファ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 NetApp Support Siteのログインクレデンシャルが必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 ダウンロードする Unified Manager のインストールパッケージは、 Red Hat Enterprise Linux と CentOS の両方のシステムで共通です。
 
 
 
+[[steps]]
 == 手順
 
 . NetApp Support Site にログインし、Unified Managerの*ダウンロードページに移動します。 https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp Support Site"]

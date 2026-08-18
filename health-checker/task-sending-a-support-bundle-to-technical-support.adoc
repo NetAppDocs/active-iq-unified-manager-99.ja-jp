@@ -15,6 +15,7 @@ summary: 問題で AutoSupport メッセージよりも詳細な診断情報と�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 テクニカルサポートに送信するには、サポートバンドルへのアクセス権が必要です。
@@ -23,6 +24,7 @@ summary: 問題で AutoSupport メッセージよりも詳細な診断情報と�
 
 
 
+[[steps]]
 == 手順
 
 . NetApp Support Siteにログインします。

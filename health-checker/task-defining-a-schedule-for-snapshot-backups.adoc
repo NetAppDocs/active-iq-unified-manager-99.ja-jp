@@ -15,6 +15,7 @@ Unified Manager UI を使用して、 Unified Manager の Snapshot バックア�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * オペレータ、アプリケーション管理者、またはストレージ管理者のロールが必要です。
@@ -23,6 +24,7 @@ Unified Manager UI を使用して、 Unified Manager の Snapshot バックア�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 数分で Snapshot バックアップが作成され、 Unified Manager データベースがロックされるのは数秒だけです。
@@ -34,6 +36,7 @@ Unified Manager UI を使用して、 Unified Manager の Snapshot バックア�
 ====
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * General * > * Database Backup * をクリックします。
@@ -48,12 +51,14 @@ Unified Manager UI を使用して、 Unified Manager の Snapshot バックア�
 
 
 
+[[results]]
 == 結果
 
 Snapshot バックアップファイルはスケジュールに基づいて作成されます。使用可能なバックアップファイルは、 [ データベースバックアップ ] ページに表示されます。
 
 
 
+[[after-you-finish]]
 == 完了後
 
 このボリュームと Snapshot の重要性により、次のいずれかの場合に通知を受けるために、このボリュームに対して 1 つまたは 2 つのアラートを作成することができます。

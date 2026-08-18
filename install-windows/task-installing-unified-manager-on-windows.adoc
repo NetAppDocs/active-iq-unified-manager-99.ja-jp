@@ -15,6 +15,7 @@ Unified Manager をインストールすることで、データストレージ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Unified Manager をインストールするシステムがシステムおよびソフトウェアの要件を満たしている必要があります。
@@ -41,6 +42,7 @@ Unified Manager 9.5 以降、 OpenJDK はインストールパッケージに含
 
 
 
+[[steps]]
 == 手順
 
 . デフォルトのローカル管理者アカウントで Windows にログインします。
@@ -66,6 +68,7 @@ Unified Manager により、不足しているサードパーティパッケー�
 
 
 
+[[results]]
 == 結果
 
 インストールによって、複数のディレクトリが作成されます。
@@ -90,6 +93,7 @@ OpenJDK がインストールされるディレクトリです。例 `C:\Program
 
 
 
+[[after-you-finish]]
 == 完了後
 
 Web UIにアクセスしてUnified Managerの初期セットアップを実行できます。手順については、を参照してください link:../config/task-using-the-maintenance-console.html["メンテナンスコンソールを使用する"]。

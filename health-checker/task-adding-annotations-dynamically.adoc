@@ -15,12 +15,14 @@ Unified Manager でカスタムアノテーションを作成すると、クラ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 アプリケーション管理者またはストレージ管理者のロールが必要です。
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage Management * > * Annotations * をクリックします。

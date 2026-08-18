@@ -15,6 +15,7 @@ summary: ネットワークインターフェイス/パフォーマンス情報�
 
 
 
+[[network-interface-attributes]]
 == ネットワークインターフェイスの属性
 
 * * IP アドレス *

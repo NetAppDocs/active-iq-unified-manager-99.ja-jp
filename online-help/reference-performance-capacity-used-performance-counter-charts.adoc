@@ -23,6 +23,7 @@ summary: 使用済みパフォーマンス容量のカウンタグラフには�
 
 
 
+[[performance-capacity-used-total-counter-chart]]
 == Performance Capacity Used -合計カウンタチャート
 
 ノードまたはアグリゲートによって消費されているパフォーマンス容量の割合が表示されます。
@@ -43,12 +44,14 @@ summary: 使用済みパフォーマンス容量のカウンタグラフには�
 
 
 
+[[performance-capacity-used-breakdown-counter-chart]]
 == 使用済みパフォーマンス容量-内訳カウンタグラフ
 
 同じ割合のパフォーマンス容量が、ユーザプロトコル、システムのバックグラウンドプロセス、空きパフォーマンス容量に分けて表示されます。
 
 
 
+[[zoom-view-button]]
 == *ズーム表示*ボタン
 
 カウンタグラフのデータが拡大表示されます。

@@ -15,12 +15,14 @@ summary: クラスタの編集ダイアログボックスを使用して、ホ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 アプリケーション管理者またはストレージ管理者のロールが必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 [NOTE]
@@ -30,6 +32,7 @@ Unified Manager 9.7 以降では、クラスタを追加する際に HTTPS の�
 ====
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage Management * > * Cluster Setup * をクリックします。

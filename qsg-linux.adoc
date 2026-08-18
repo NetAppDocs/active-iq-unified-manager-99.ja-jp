@@ -13,6 +13,7 @@ summary: Linux プラットフォームでの Unified Manager のクイックス
 
 
 
+[[system-requirements]]
 == システム要件
 
 * オペレーティングシステム：Red Hat Enterprise LinuxおよびCentOSバージョン7.xおよび8.x（x86_64アーキテクチャに基づく）は、OSインストーラのSoftware SelectionオプションのServer with GUIベース環境を使用してインストールされます
@@ -24,10 +25,12 @@ summary: Linux プラットフォームでの Unified Manager のクイックス
 
 
 
+[[installing-active-iq-unified-manager]]
 == Active IQ Unified Manager をインストールしています
 
 
 
+[[download-the-installer]]
 === インストーラをダウンロードします。
 
 . をダウンロードします `ActiveIQUnifiedManager-<version>.zip` インストールパッケージ：
@@ -38,6 +41,7 @@ summary: Linux プラットフォームでの Unified Manager のクイックス
 
 
 
+[[verify-repository-configuration]]
 === リポジトリの構成を確認する
 
 Red Hat Enterprise Linux リポジトリまたは CentOS リポジトリを設定する手順はサイトによって異なります。を使用できます `pre_install_check.sh` インストールパッケージに含まれるスクリプトで、オペレーティングシステムの構成を確認します。システムがインターネットに接続されている場合は、 Red Hat Enterprise Linux リポジトリまたは CentOS リポジトリのセットアップ手順が自動的に表示されます。
@@ -46,6 +50,7 @@ Red Hat Enterprise Linux リポジトリまたは CentOS リポジトリを設�
 
 
 
+[[install-unified-manager]]
 === Unified Manager をインストールします
 
 Unified Managerでは、を使用します `yum` ソフトウェアおよび依存ソフトウェアをインストールするユーティリティ。Red Hat Enterprise Linux または CentOS にはさまざまなイメージがインストールされるため、インストールするパッケージはイメージに含まれるソフトウェアによって異なります。。 `yum` インストールに使用する依存ソフトウェアパッケージは、ユーティリティによって決定されます。依存するソフトウェアパッケージの詳細については、を参照してください link:./install-linux/reference-red-hat-and-centos-software-and-installation-requirements.html["Linux ソフトウェアとインストールの要件"]。

@@ -15,6 +15,7 @@ LUN/パフォーマンス情報ページを使用して、LUNの物理属性と�
 
 
 
+[[lun-attributes]]
 == LUN 属性
 
 * *WWN*

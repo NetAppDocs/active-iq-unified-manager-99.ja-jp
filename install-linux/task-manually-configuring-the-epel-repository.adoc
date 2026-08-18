@@ -15,12 +15,14 @@ Unified Manager をインストールするシステムが Extra Packages for En
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 EPEL リポジトリは、システムにインストールする必要があるサードパーティユーティリティへのアクセスを提供します。Unified Manager を Red Hat と CentOS のどちらのシステムにインストールする場合も EPEL リポジトリを使用します。
 
 
 
+[[steps]]
 == 手順
 
 . インストールに対応する EPEL リポジトリをダウンロードします。Red Hat Enterprise Linux 7 の場合は、次のサイトからダウンロードしてください。 `+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm+` バージョン 8 については、次のサイトからダウンロードしてください。 `+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm+`
@@ -29,6 +31,7 @@ EPEL リポジトリは、システムにインストールする必要がある
 
 
 
+[[after-you-finish]]
 == 完了後
 
 Red Hat Enterprise Linux 8システムの場合、モジュラRPMパッケージを含む内部リポジトリがあるとします。たとえば、次のようになります。 `javapackages-filesystem-<version>.module.rpm`モジュールパッケージのメタデータが同じリポジトリ内にあることを確認します。

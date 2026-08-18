@@ -15,18 +15,21 @@ summary: Linuxホストを最初にセットアップした時点でUnified Mana
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 Unified Manager がインストールされている Red Hat Enterprise Linux マシンまたは CentOS Linux マシンへの root ユーザアクセスが必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 データディレクトリのサイズを拡張する前に Unified Manager データベースをバックアップすることを推奨します。
 
 
 
+[[steps]]
 == 手順
 
 . ディスクスペースを追加する Linux マシンに root ユーザとしてログインします。

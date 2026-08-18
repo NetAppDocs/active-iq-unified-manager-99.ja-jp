@@ -26,6 +26,7 @@ I/O パスとコンポーネントレベルのレイテンシをトポロジの�
 
 
 
+[[viewing-summary-topology]]
 == トポロジのサマリビューの表示
 
 トポロジのサマリビューでVMを表示してパフォーマンスの問題を特定します
@@ -56,6 +57,7 @@ link:concept-troubleshooting-workloads-using-the-workload-analyzer.html["Workloa
 
 
 
+[[viewing-expanded-topology]]
 == トポロジの展開ビューの表示
 
 VM のトポロジの展開ビューでは、各コンポーネントにドリルダウンして個別に確認することができます。

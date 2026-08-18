@@ -15,6 +15,7 @@ Red HatプラットフォームでUnified Manager 9.7または9.8から9.9にア
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Unified Manager をアップグレードするシステムがシステム要件とソフトウェア要件を満たしている必要があります。
@@ -40,6 +41,7 @@ xref:task-upgrading-openjdk-on-linux-ocum.adoc[Linux での JRE のアップグ�
 
 
 
+[[steps]]
 == 手順
 
 . ターゲットの Red Hat Enterprise Linux サーバまたは CentOS サーバにログインします。
@@ -99,6 +101,7 @@ https://fully_qualified_domain_name/
 
 
 
+[[after-you-finish]]
 == 完了後
 
 サポートされている Web ブラウザに表示された IP アドレスまたは URL を入力して Unified Manager Web UI を起動し、前に設定したメンテナンスユーザの名前（ umadmin ）とパスワードを使用してログインします。

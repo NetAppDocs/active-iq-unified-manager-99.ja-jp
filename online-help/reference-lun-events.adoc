@@ -15,6 +15,7 @@ LUN イベントは、 LUN のステータス情報を提供します。これ�
 
 
 
+[[impact-area-availability]]
 == 影響範囲：可用性
 
 アスタリスク（ * ）は、 Unified Manager イベントに変換された EMS イベントを示します。
@@ -193,6 +194,7 @@ LUN
 |===
 
 
+[[impact-area-capacity]]
 == 影響範囲：容量
 
 |===
@@ -229,6 +231,7 @@ LUN Snapshot コピー用の十分なスペースがありません（ ocument L
 |===
 
 
+[[impact-area-configuration]]
 == 影響範囲：構成
 
 |===
@@ -265,6 +268,7 @@ LUN
 |===
 
 
+[[impact-area-performance]]
 == 影響範囲：パフォーマンス
 
 |===

@@ -15,6 +15,7 @@ Unified Manager を実行するホストオペレーティングシステムを�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * 仮想アプライアンス：
@@ -35,12 +36,14 @@ Unified Manager を実行するホストオペレーティングシステムを�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 ここでは、仮想アプライアンスにバックアップファイルを作成し、そのバックアップファイルを Red Hat Enterprise Linux または CentOS のシステムにコピーして、新しいシステムにデータベースバックアップをリストアする方法について説明します。
 
 
 
+[[steps]]
 == 手順
 
 . 仮想アプライアンスで、 * Management * > * Database Backup * をクリックします。
@@ -68,6 +71,7 @@ Unified Manager を実行するホストオペレーティングシステムを�
 
 
 
+[[after-you-finish]]
 == 完了後
 
 次のタスクを実行する必要があります。

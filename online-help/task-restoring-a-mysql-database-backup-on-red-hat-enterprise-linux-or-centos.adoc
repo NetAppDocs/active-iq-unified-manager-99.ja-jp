@@ -15,6 +15,7 @@ summary: データ損失やデータ破損が発生した場合、 Unified Manag
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Unified Manager がインストールされている Linux ホストの root ユーザのクレデンシャルが必要です。
@@ -28,6 +29,7 @@ summary: データ損失やデータ破損が発生した場合、 Unified Manag
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 リストア機能は、プラットフォームおよびバージョンに固有の機能です。Unified Manager のバックアップは、同じバージョンの Unified Manager にのみリストアできます。Red Hat Enterprise Linux または CentOS システムにリストアできるのは、 Linux のバックアップファイルと仮想アプライアンスのバックアップファイルです。
@@ -39,6 +41,7 @@ summary: データ損失やデータ破損が発生した場合、 Unified Manag
 ====
 
 
+[[steps]]
 == 手順
 
 . 新しいサーバへのリストアを実行する場合は、 Unified Manager のインストールの完了後に、 UI を起動したり、クラスタ、ユーザ、または認証設定を設定したりしないでください。この情報は、リストアプロセスでバックアップファイルに取り込まれます。
@@ -60,6 +63,7 @@ Bundle to restore from: /data/ocum-backup/UM_9.8.N151113.1348_backup_rhel_02-20-
 
 
 
+[[after-you-finish]]
 == 完了後
 
 バックアップをリストアしたあとに OnCommand Workflow Automation サーバが動作しない場合は、次の手順を実行します。

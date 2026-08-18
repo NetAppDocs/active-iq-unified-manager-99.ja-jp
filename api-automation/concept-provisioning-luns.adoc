@@ -259,6 +259,7 @@ management-server
 ----
 
 
+[[troubleshooting-steps-for-failure-in-lun-creation-or-mapping]]
 == LUN の作成またはマッピングに失敗した場合のトラブルシューティング手順
 
 このワークフローを完了しても、 LUN の作成に失敗することがあります。LUN の作成に成功しても、 LUN を作成したノードに SAN LIF またはアクセスエンドポイントがないために igroup との LUN マッピングが失敗することがあります。障害が発生すると、次のメッセージが表示されます。

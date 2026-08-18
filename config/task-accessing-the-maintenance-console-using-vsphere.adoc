@@ -15,6 +15,7 @@ Unified Manager ユーザインターフェイスが動作状態でない場合�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * maintenance ユーザである必要があります。
@@ -23,6 +24,7 @@ Unified Manager ユーザインターフェイスが動作状態でない場合�
 
 
 
+[[steps]]
 == 手順
 
 . vSphere Client で、 Unified Manager 仮想アプライアンスを探します。

@@ -15,6 +15,7 @@ ReorderAnnotationRuleタイアロクホツクスを使用すると、ストレ�
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 アプリケーション管理者またはストレージ管理者のロールが必要です。
@@ -31,6 +32,7 @@ ReorderAnnotationRuleタイアロクホツクスを使用すると、ストレ�
 
 
 
+[[list-view]]
 == リストビュー
 
 * *ランク*

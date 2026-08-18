@@ -15,6 +15,7 @@ summary: 不要になったグループは、 Unified Manager から削除でき
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * 削除するグループのグループルールに関連付けられたストレージオブジェクト（クラスタ、 SVM 、またはボリューム）がないことを確認する必要があります。
@@ -23,6 +24,7 @@ summary: 不要になったグループは、 Unified Manager から削除でき
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage Management * > * Groups * をクリックします。

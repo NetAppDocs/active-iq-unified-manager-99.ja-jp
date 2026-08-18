@@ -39,6 +39,7 @@ Add Group Ruleダイアログボックスでは、Unified Managerでグループ
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 * *保存して追加*

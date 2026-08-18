@@ -15,13 +15,14 @@ OnCommand Workflow Automation （ WFA ）と Unified Manager の間にセキュ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Workflow Automation のバージョン 5.1 以降がインストールされている必要があります。
 +
 [NOTE]
 ====
-WFA 5.1 には「 WFA pack for managing Clustered Data ONTAP 」が含まれています。したがって、以前のようにこのパックを NetAppStorage Automation Store からダウンロードして、 WFA サーバに個別にインストールする必要はありません。  https://automationstore.netapp.com/pack-list.shtml["ONTAP を管理するための WFA パック"]
+「`WFA pack for managing Clustered Data ONTAP`」は WFA 5.1 に含まれているため、以前必要だったように NetAppStorage Automation Store からこのパックをダウンロードして WFA サーバーに個別にインストールする必要はありません。 https://community.netapp.com/["ONTAP を管理するための WFA パック"^]
 
 ====
 * WFA と Unified Manager の接続をサポートするために Unified Manager で作成したデータベースユーザの名前を確認しておく必要があります。
@@ -35,6 +36,7 @@ WFA 5.1 には「 WFA pack for managing Clustered Data ONTAP 」が含まれて�
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * 一般 * > * Workflow Automation * をクリックします。

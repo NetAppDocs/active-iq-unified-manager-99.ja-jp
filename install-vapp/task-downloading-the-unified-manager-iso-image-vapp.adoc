@@ -15,12 +15,14 @@ Unified Manager をアップグレードする前に、 Unified Manager のア�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 NetApp Support Siteのログインクレデンシャルが必要です。
 
 
 
+[[steps]]
 == 手順
 
 . NetApp Support Siteにログインします。 https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp Support Site"]

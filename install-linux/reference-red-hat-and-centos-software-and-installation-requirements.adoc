@@ -15,6 +15,7 @@ Unified Manager をインストールする Linux システムには、特定の
 
 
 
+[[operating-system-software]]
 == オペレーティングシステムソフトウェア
 
 Linux システムに、次のバージョンのオペレーティングシステムとサポートソフトウェアがインストールされている必要があります。
@@ -28,6 +29,7 @@ http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
 
 
 
+[[third-party-software]]
 == サードパーティ製ソフトウェア
 
 Unified Manager は WildFly Web サーバに導入されます。WildFly 19.0.0 が Unified Manager にバンドルされて構成されています。
@@ -47,12 +49,14 @@ Unified Manager は WildFly Web サーバに導入されます。WildFly 19.0.0 
 ====
 
 
+[[user-authorization-requirements]]
 == ユーザ認証の要件
 
 LinuxシステムへのUnified Managerのインストールは、rootユーザに加え、を使用してroot以外のユーザも実行できます `sudo` コマンドを実行します
 
 
 
+[[installation-requirements]]
 == インストールの要件
 
 Red Hat Enterprise Linux または CentOS とその関連リポジトリをシステムにインストールする際のベストプラクティスは次のとおりです。別の方法でインストールまたは設定されたシステム、またはオフプレミス（クラウド）に導入されたシステムでは、追加の手順が必要になる場合があります。また、 Unified Manager が適切に実行されない可能性があります。
@@ -88,6 +92,7 @@ xref:task-manually-configuring-the-mysql-repository.adoc[MySQL リポジトリ�
 ====
 
 
+[[port-443-requirement]]
 == ポート 443 の要件
 
 Red Hat Enterprise Linux および CentOS の汎用イメージは、ポート 443 への外部アクセスをブロックする場合があります。そのため、 Unified Manager のインストール後に管理者 Web UI に接続できなくなることがあります。次のコマンドを実行すると、汎用の Red Hat Enterprise Linux または CentOS システムのすべての外部ユーザとアプリケーションがポート 443 にアクセスできるようになります。

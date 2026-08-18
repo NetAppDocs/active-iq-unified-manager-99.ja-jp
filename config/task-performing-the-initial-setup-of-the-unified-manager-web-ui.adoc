@@ -15,6 +15,7 @@ Unified Manager を使用するには、 NTP サーバ、メンテナンスユ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 次の作業を完了しておきます。
@@ -25,6 +26,7 @@ Unified Manager を使用するには、 NTP サーバ、メンテナンスユ�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 Active IQ Unified Manager の Getting Started ページは、最初に Web UI にアクセスしたときにのみ表示されます。次のページは、 VMware 環境の場合のものです。
@@ -35,6 +37,7 @@ image::../media/first-experience-wizard.png[初期設定ウィザード]
 
 
 
+[[steps]]
 == 手順
 
 . Active IQ Unified Manager の初期セットアップページで、メンテナンスユーザの E メールアドレス、 SMTP サーバのホスト名とその他の SMTP オプション、および NTP サーバ（ VMware の場合のみ）を入力します。[* Continue （続行） ] をクリックします。
@@ -56,6 +59,7 @@ AutoSupport コンテンツの送信用にインターネットアクセスを�
 
 
 
+[[results]]
 == 結果
 
 Getting Started（はじめに）ページが閉じ、Unified Manager Dashboard（Unified Managerダッシュボード）ページが表示されます。

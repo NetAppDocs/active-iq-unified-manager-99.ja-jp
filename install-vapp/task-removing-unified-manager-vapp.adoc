@@ -15,6 +15,7 @@ Unified Manager をアンインストールするには、 Unified Manager ソ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * VMware vCenter Server と vSphere Web Client にアクセスするためのクレデンシャルが必要です。
@@ -24,6 +25,7 @@ Unified Manager をアンインストールするには、 Unified Manager ソ�
 
 
 
+[[steps]]
 == 手順
 
 . Unified Managerのメンテナンスコンソールを使用して、Unified Managerサーバから外部のデータプロバイダへのアクティブな接続がないことを確認します。

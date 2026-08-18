@@ -15,6 +15,7 @@ Unified Manager をインストールしたら、 ONTAP システムの監視を
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Web UI へのアクセスが初めての場合は、メンテナンスユーザ（ Linux 環境の場合は umadmin ユーザ）としてログインする必要があります。
@@ -24,6 +25,7 @@ Unified Manager をインストールしたら、 ONTAP システムの監視を
 
 
 
+[[steps]]
 == 手順
 
 . インストールの完了時に表示された URL を使用して、ブラウザから Unified Manager Web UI を起動します。URL は、 Unified Manager サーバの IP アドレスまたは完全修飾ドメイン名（ FQDN ）です。

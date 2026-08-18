@@ -15,12 +15,14 @@ summary: パフォーマンス統計のデフォルトの収集間隔は 5 分�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 Unified Manager サーバのメンテナンスコンソールへのログインが許可されているユーザ ID とパスワードが必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 パフォーマンス統計の収集が時間内に完了しなかった問題 は、バナーメッセージで示されます `Unable to consistently collect from cluster <cluster_name>` または `Data collection is taking too long on cluster <cluster_name>`。
@@ -36,6 +38,7 @@ Unified Manager サーバのメンテナンスコンソールへのログイン�
 
 
 
+[[steps]]
 == 手順
 
 . SSH を使用して、 Unified Manager ホストにメンテナンスユーザとしてログインします。
@@ -49,6 +52,7 @@ Unified Manager メンテナンスコンソールのプロンプトが表示さ�
 
 
 
+[[after-you-finish]]
 == 完了後
 
 外部データプロバイダ（ Graphite など）への接続を現在設定してある場合は、 Unified Manager の収集間隔を 10 分または 15 分に変更したあと、データプロバイダの送信間隔も Unified Manager の収集間隔以上に変更する必要があります。

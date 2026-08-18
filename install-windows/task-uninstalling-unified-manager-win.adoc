@@ -16,6 +16,7 @@ Unified Manager をアンインストールするには、プログラムと機�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Windows の管理者権限が必要です。
@@ -24,6 +25,7 @@ Unified Manager をアンインストールするには、プログラムと機�
 
 
 
+[[steps]]
 == 手順
 
 . 次のいずれかを実行して Unified Manager をアンインストールします。

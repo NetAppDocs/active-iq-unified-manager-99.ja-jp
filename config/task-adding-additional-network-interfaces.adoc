@@ -15,6 +15,7 @@ summary: ネットワークトラフィックを分離する必要がある場�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 vSphere を使用して仮想アプライアンスにネットワークインターフェイスを追加しておく必要があります。
@@ -23,6 +24,7 @@ vSphere を使用して仮想アプライアンスにネットワークインタ
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 [NOTE]
@@ -32,6 +34,7 @@ Unified Manager が Red Hat Enterprise Linux または Microsoft Windows にイ�
 ====
 
 
+[[steps]]
 == 手順
 
 . vSphereコンソール*のメインメニュー*で、* System Configuration *>* Reboot Operating System *を選択します。

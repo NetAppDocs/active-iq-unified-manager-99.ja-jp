@@ -15,6 +15,7 @@ SVM ピアページでは、ソースとデスティネーションの Storage V
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 各コマンドボタンを使用して次のタスクを実行できます。
@@ -31,6 +32,7 @@ Storage Virtual Machine ピアの作成ページを開きます。
 
 
 
+[[storage-vm-peers-list]]
 == Storage VM ピアのリスト
 
 SVM ピアのリストには、作成されたソースとデスティネーションの Storage VM の関連付けと、各関連付けで許可されている保護関係のタイプが表形式で表示されます。

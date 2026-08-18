@@ -15,6 +15,7 @@ summary: アラートをテストして、アラートが正しく設定され�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * 受信者の E メールアドレス、 SMTP サーバ、 SNMP トラップなどの通知を設定しておく必要があります。
@@ -27,6 +28,7 @@ Unified Manager サーバはこれらの設定を使用して、イベントが�
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage Management * > * Alert Setup * をクリックします。

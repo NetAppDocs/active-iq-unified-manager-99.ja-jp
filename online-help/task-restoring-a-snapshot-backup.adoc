@@ -15,6 +15,7 @@ summary: データ損失やデータ破損が発生した場合、 Unified Manag
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Unified Manager がインストールされている Windows ホストマシンに対する Linux ホストの root ユーザのクレデンシャルと管理者権限が必要です。
@@ -23,12 +24,14 @@ summary: データ損失やデータ破損が発生した場合、 Unified Manag
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 リストア機能は、プラットフォームおよびバージョンに固有の機能です。Unified Manager のバックアップは、同じバージョンの Unified Manager にのみリストアできます。
 
 
 
+[[steps]]
 == 手順
 
 . Unified Manager システムの IP アドレスまたは完全修飾ドメイン名に接続します。
@@ -67,6 +70,7 @@ Secure Shell の略
 
 
 
+[[after-you-finish]]
 == 完了後
 
 バックアップをリストアしたあとに Workflow Automation サーバが動作しなくなった場合は、次の手順を実行します。

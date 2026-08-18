@@ -15,6 +15,7 @@ NVMeネームスペース/パフォーマンス情報ページを使用して、
 
 
 
+[[nvme-namespace-attributes]]
 == NVMeネームスペース属性
 
 * * クラスタ *

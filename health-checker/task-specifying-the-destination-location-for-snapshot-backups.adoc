@@ -15,6 +15,7 @@ summary: いずれかの ONTAP クラスタで設定済みのボリュームで�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Active IQ Unified Manager がインストールされている Linux ホストの root ユーザのクレデンシャルが必要です。
@@ -25,6 +26,7 @@ summary: いずれかの ONTAP クラスタで設定済みのボリュームで�
 
 
 
+[[steps]]
 == 手順
 
 . Secure Shell を使用して、 Active IQ Unified Manager システムの IP アドレスまたは FQDN に接続します。

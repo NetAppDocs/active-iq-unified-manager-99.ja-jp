@@ -43,6 +43,6 @@ Unified Manager には次の機能があります。
 * 物理容量と論理容量、利用率、スペース削減率、パフォーマンス、関連イベントなど、ストレージオブジェクトの情報の作成と管理に関するレポート
 * OnCommand Workflow Automation と統合してワークフローを実行
 +
-Storage Automation Store で、 OnCommand Workflow Automation （ WFA ）用に開発されたネットアップ認定のストレージワークフロー自動化パックを提供しています。パックをダウンロードし、 WFA にインポートして実行できます。自動化されたワークフローは次のとおりです link:https://automationstore.netapp.com["Storage Automation Store の略"]
+Storage Automation Store には、NetApp 認定の自動化ストレージ ワークフロー パックが含まれており、OnCommand Workflow Automation （WFA） で使用するために開発されています。パックをダウンロードして、WFA にインポートすれば実行できます。自動化されたワークフローは、Storage Automation Store で利用できます。
 
 

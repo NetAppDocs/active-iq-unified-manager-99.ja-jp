@@ -21,6 +21,7 @@ Relationship Thresholdsページでは、管理対象外の保護関係にグロ
 
 
 
+[[lag-thresholds-for-unmanaged-relationships-area]]
 == 管理対象外の関係の遅延しきい値領域
 
 遅延領域では、次の条件について、管理対象外の関係の遅延しきい値を設定できます。

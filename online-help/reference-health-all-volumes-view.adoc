@@ -23,6 +23,7 @@ Health：All Volumes（健常性：すべてのボリューム）ビューには
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 * *しきい値を編集*

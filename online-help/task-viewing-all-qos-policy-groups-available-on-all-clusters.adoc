@@ -15,6 +15,7 @@ Unified Manager が監視しているクラスタで使用可能なすべての 
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage * > * QoS Policy Groups * をクリックします。

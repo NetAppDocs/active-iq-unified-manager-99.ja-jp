@@ -15,6 +15,7 @@ WindowsプラットフォームでUnified Manager 9.7または9.8から9.9にア
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Unified Manager をアップグレードするシステムがシステム要件とソフトウェア要件を満たしている必要があります。
@@ -56,6 +57,7 @@ Unified Manager のインストーラは、問題との相互運用性がある�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 アップグレードプロセスの実行中は、 Unified Manager を使用できなくなります。実行中の処理がある場合は、 Unified Manager をアップグレードする前に完了しておいてください
@@ -64,6 +66,7 @@ Unified Manager を OnCommand Workflow Automation のインスタンスとペア
 
 
 
+[[steps]]
 == 手順
 
 . NetApp Support Site にログインし、Unified Managerの*ダウンロードページに移動します。 https://mysupport.netapp.com/site/products/all/details/activeiq-unified-manager/downloads-tab["NetApp Support Site"]
@@ -85,6 +88,7 @@ This setup will perform an upgrade of Unified Manager. Do you want to continue?
 
 
 
+[[after-you-finish]]
 == 完了後
 
 [NOTE]

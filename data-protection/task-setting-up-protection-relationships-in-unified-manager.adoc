@@ -15,6 +15,7 @@ Unified Manager と OnCommand Workflow Automation を使用してデータを保
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * アプリケーション管理者またはストレージ管理者のロールが必要です。
@@ -29,6 +30,7 @@ Unified Manager と OnCommand Workflow Automation を使用してデータを保
 
 
 
+[[steps]]
 == 手順
 
 . 作成する保護関係のタイプに応じて、次のいずれかを実行します。

@@ -15,6 +15,7 @@ SnapMirror ポリシーを作成して、保護関係における SnapMirror 転
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * アプリケーション管理者またはストレージ管理者のロールが必要です。
@@ -24,6 +25,7 @@ SnapMirror ポリシーを作成して、保護関係における SnapMirror 転
 
 
 
+[[steps]]
 == 手順
 
 . Configure Protection * （保護の設定）ダイアログボックスの * SnapMirror * タブで、 * Relationship Settings * （関係設定 * ）領域の * Create Policy * （ポリシーの作成）リンクをクリックします。

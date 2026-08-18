@@ -15,6 +15,7 @@ summary: ハードウェア障害や災害が原因で保護関係のソース�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * アプリケーション管理者またはストレージ管理者のロールが必要です。
@@ -23,6 +24,7 @@ summary: ハードウェア障害や災害が原因で保護関係のソース�
 
 
 
+[[steps]]
 == 手順
 
 . xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[SnapMirror 関係を解除]。

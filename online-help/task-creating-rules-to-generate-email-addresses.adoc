@@ -15,6 +15,7 @@ summary: クラスタ、Storage Virtual Machine（SVM）、ボリューム、qtr
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * アプリケーション管理者またはストレージ管理者のロールが必要です。
@@ -23,6 +24,7 @@ summary: クラスタ、Storage Virtual Machine（SVM）、ボリューム、qtr
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 クォータの E メールアドレスのルールを定義して、実行順にそれらを入力する必要があります。たとえば、 qtree1 でのクォータ違反に関する通知を E メールアドレス「 qtree1@xyz.com 」で受信し、それ以外の qtree については E メールアドレス「 admin@xyz.com 」を使用する場合は、次の順序でルールを指定する必要があります。
@@ -37,6 +39,7 @@ if （ $user_or_group=* ） then $user_or_group@$domain
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * General * > * Quota Email Rules * をクリックします。

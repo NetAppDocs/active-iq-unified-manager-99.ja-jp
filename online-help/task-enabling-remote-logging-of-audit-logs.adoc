@@ -15,12 +15,14 @@ summary: Configure Audit Logs ダイアログボックスの Enable Remote Loggi
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 監査ログのリモートロギングは、 Active IQ Unified Manager サーバ上の監査ログファイルが改ざんされた場合に備えて、改ざんを防止するためのバックアップ機能を提供します。
 
 
 
+[[steps]]
 == 手順
 
 . [ 監査ログの設定 *] ダイアログボックスで、 [ リモートログを有効にする *] チェックボックスをオンにします。

@@ -15,6 +15,7 @@ Unified Manager がインストールされている Red Hat Enterprise Linux 7.
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 ここに記載する 2 つの方法の違いは、 Unified Manager のリストア処理を新しい 8.x サーバで実行する場合と同じサーバで実行する場合です。

@@ -15,6 +15,7 @@ summary: 管理ステーションイベントは、 Unified Manager がインス
 
 
 
+[[impact-area-configuration]]
 == 影響範囲：構成
 
 |===
@@ -131,6 +132,7 @@ MySQL ログファイルのサイズが増加しました。再起動が必要�
 |===
 
 
+[[impact-area-performance]]
 == 影響範囲：パフォーマンス
 
 |===

@@ -15,6 +15,7 @@ summary: インストールファイルをダウンロードしたら、 Unified
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 システム要件を確認しておく必要があります。Unified Manager 仮想アプライアンスを導入する前に、必要な変更を行ってください。
@@ -46,6 +47,7 @@ Dynamic Host Configuration Protocol （ DHCP ；動的ホスト構成プロト�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 Unified Manager 9.8以降では、VMware ToolsがOpen VM Toolsに置き換えられています  `open-vm-tools`）。では、インストールプロセスの一環としてVMware Toolsをインストールする必要はありません `open-vm-tools` は、Unified Managerインストールパッケージに含まれています。
@@ -56,6 +58,7 @@ Unified Manager 仮想アプライアンスでは、 VMware High Availability �
 
 
 
+[[steps]]
 == 手順
 
 . vSphere Client で、 * File * > * Deploy OVF Template * をクリックします。
@@ -123,6 +126,7 @@ VM コンソールに Unified Manager Web UI の URL が表示されます。
 
 
 
+[[after-you-finish]]
 == 完了後
 
 Web UIにアクセスしてUnified Managerの初期セットアップを実行できます。手順については、を参照してください link:../config/task-using-the-maintenance-console.html["メンテナンスコンソールを使用する"]。

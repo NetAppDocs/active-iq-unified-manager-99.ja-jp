@@ -15,6 +15,7 @@ summary: 'レポートスケジュールは、 [Report Schedules] ページで�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 [NOTE]
@@ -27,6 +28,7 @@ summary: 'レポートスケジュールは、 [Report Schedules] ページで�
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * ストレージ管理 * > * レポートスケジュール * をクリックします。

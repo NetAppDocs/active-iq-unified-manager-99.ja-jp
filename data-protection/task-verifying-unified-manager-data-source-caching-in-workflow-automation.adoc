@@ -15,12 +15,14 @@ Unified Manager データソースのキャッシングが正しく機能して�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 このタスクを実行するには、 Workflow Automation で Administrator ロールまたは Architect ロールが割り当てられている必要があります。
 
 
 
+[[steps]]
 == 手順
 
 . Workflow Automation の UI から、 * Execution * > * Data Sources * を選択します。

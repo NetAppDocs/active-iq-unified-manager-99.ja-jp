@@ -15,6 +15,7 @@ Unified Manager は、新しい Active IQ ルールファイルの有無を自�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Active IQ イベントレポートを有効にしておく必要があります。
@@ -23,12 +24,14 @@ Unified Manager は、新しい Active IQ ルールファイルの有無を自�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 ストレージシステムを確実に保護し、最適な状態で運用を続けるために、月に一度は新しいルールファイルをダウンロードすることを推奨します。ルールファイルは次の場所にあります。 http://mysupport.netapp.com/NOW/public/unified_manager/bin/secure_rules.zip[]
 
 
 
+[[steps]]
 == 手順
 
 . ネットワークにアクセスできるコンピュータで、NetApp Support Site に移動し、現在のルールをダウンロードします `.zip` ファイル。
@@ -43,6 +46,7 @@ Unified Manager は、新しい Active IQ ルールファイルの有無を自�
 
 
 
+[[results]]
 == 結果
 
 ルールファイルが Unified Manager サーバに解凍されます。午前 0 時過ぎに管理対象クラスタで AutoSupport ファイルが生成されたあと、 Unified Manager がルールファイルに照らしてクラスタをチェックし、必要に応じて新しいリスクイベントとインシデントイベントを生成します。

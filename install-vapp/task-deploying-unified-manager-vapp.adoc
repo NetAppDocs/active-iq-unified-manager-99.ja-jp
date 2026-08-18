@@ -15,6 +15,7 @@ Unified Manager を導入するには、ソフトウェアをダウンロード�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * 導入に必要なシステム要件を確認し、満たしておく必要があります。
@@ -34,6 +35,7 @@ xref:concept-requirements-for-installing-unified-manager.adoc[システム要件
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 Unified Manager は、 VMware ESXi サーバに仮想アプライアンスとして導入できます。
@@ -47,6 +49,7 @@ Unified Manager 9.8以降では、VMware ToolsがOpen VM Toolsに置き換えら
 ====
 
 
+[[after-you-finish]]
 == 完了後
 
 導入と初期セットアップが完了したら、クラスタを追加するかメンテナンスコンソールで追加のネットワーク設定を行ってから、 Web UI にアクセスできます。

@@ -15,6 +15,7 @@ Health ： All Volumes ビューでは、同じ Storage VM 上にある複数の
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * アプリケーション管理者またはストレージ管理者のロールが必要です。
@@ -23,6 +24,7 @@ Health ： All Volumes ビューでは、同じ Storage VM 上にある複数の
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 次の場合、 * Protect * メニューは表示されません。
@@ -33,6 +35,7 @@ Health ： All Volumes ビューでは、同じ Storage VM 上にある複数の
 
 
 
+[[steps]]
 == 手順
 
 . [ * 正常性：すべてのボリューム * ] ビューで、保護するボリュームを選択します。
@@ -69,6 +72,7 @@ Health ： All Volumes ビューに戻ります。
 
 
 
+[[results]]
 == 結果
 
 設定で指定したデスティネーション SVM と詳細設定で有効にしたオプションに応じて、次のいずれかの SnapMirror 関係が作成されます。

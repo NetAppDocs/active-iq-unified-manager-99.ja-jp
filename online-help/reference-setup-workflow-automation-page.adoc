@@ -17,6 +17,7 @@ Workflow Automationページでは、OnCommand Workflow Automation とUnified Ma
 
 
 
+[[unified-manager-database-user]]
 == Unified Managerデータベースユーザ
 
 この領域では、Unified ManagerとWorkflow Automationのペアリングに必要なデータベースユーザのクレデンシャルを入力できます。
@@ -33,6 +34,7 @@ Unified Managerデータベースのデータへのアクセスに使用する�
 
 
 
+[[oncommand-workflow-automation-credentials]]
 == OnCommand Workflow Automation クレデンシャル
 
 この領域では、Unified Managerとのペアリングに必要なWorkflow Automationアカウントのクレデンシャルを入力できます。
@@ -57,6 +59,7 @@ Workflow Automationへのログインに使用するユーザ名を指定でき�
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 各コマンドボタンを使用して、セットアップオプションを削除、保存、またはキャンセルできます。

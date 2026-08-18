@@ -130,6 +130,7 @@ LDAPS 認証サーバとの通信に使用されるセキュアな LDAP を指�
 
 
 
+[[authentication-servers-area]]
 == Authentication Servers 領域
 
 Authentication Servers 領域には、管理サーバがリモートユーザの検索および認証のために通信する認証サーバが表示されます。リモートのユーザまたはグループのクレデンシャルは、認証サーバで管理されます。

@@ -15,18 +15,21 @@ Unified Manager がボリューム、クラスタ、 Storage Virtual Machine （
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 アプリケーション管理者またはストレージ管理者のロールが必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 監視中のストレージオブジェクトは、アノテーションルールの作成後すぐにアノテートされます。新しいオブジェクトは、監視サイクルの完了後にアノテートされます。
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage Management * > * Annotations * をクリックします。
@@ -68,6 +71,7 @@ Unified Manager がボリューム、クラスタ、 Storage Virtual Machine （
 
 
 
+[[example-of-creating-an-annotation-rule]]
 == アノテーションルールの作成例
 
 アノテーションルールを作成し、条件の設定と条件グループの追加を行うには、アノテーションルールの追加ダイアログで次の手順を実行します。

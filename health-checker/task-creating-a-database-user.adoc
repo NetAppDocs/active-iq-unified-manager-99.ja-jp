@@ -15,18 +15,21 @@ Workflow Automation と Unified Manager の間の接続をサポートする場�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 アプリケーション管理者のロールが必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 データベースユーザは、 Workflow Automation との統合およびレポート固有のデータベースビューへのアクセスを行うことができます。データベースユーザは、 Unified Manager Web UI やメンテナンスコンソールにはアクセスできず、 API 呼び出しも実行できません。
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * 一般 * > * ユーザー * をクリックします。

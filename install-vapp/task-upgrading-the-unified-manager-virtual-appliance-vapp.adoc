@@ -15,6 +15,7 @@ Unified Manager仮想アプライアンスは9.7および9.8リリースから9.
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 次の点を確認します。
@@ -40,6 +41,7 @@ xref:reference-vmware-software-and-installation-requirements.adoc[VMware ソフ�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 アップグレードプロセスの実行中は、 Unified Manager を使用できなくなります。実行中の処理がある場合は、 Unified Manager をアップグレードする前に完了しておいてください
@@ -48,6 +50,7 @@ Workflow Automation と Unified Manager を連携させて使用している場�
 
 
 
+[[steps]]
 == 手順
 
 . vSphere Client で、 * Home * > * Inventory * > * VMs and Templates * をクリックします。
@@ -81,6 +84,7 @@ Workflow Automation と Unified Manager を連携させて使用している場�
 
 
 
+[[after-you-finish]]
 == 完了後
 
 Web UI にログインして、アップグレード後のバージョンの Unified Manager を使用できます。検出プロセスが完了するのを待ってから、 UI での作業を実行する必要があります。

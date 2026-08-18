@@ -15,6 +15,7 @@ Storage Virtual Machine ピアの作成ウィザードでは、 SnapMirror 保�
 
 
 
+[[select-source]]
 == ソースを選択します
 
 ソースの選択パネルでは、 Storage VM ピアのソースまたはプライマリ Storage VM を選択できます。
@@ -61,12 +62,14 @@ SnapVault 関係をピアタイプとして指定します。このオプショ�
 
 
 
+[[select-protection-destinations]]
 == Protection Destinations を選択します
 
 Storage Virtual Machine ピアの作成ウィザードの保護デスティネーションの選択パネルでは、データのコピー先またはレプリケート先を選択できます。ピアはクラスタごとに 1 つのデスティネーション Storage VM にしか作成できません。
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 各コマンドボタンを使用して次のタスクを実行できます。

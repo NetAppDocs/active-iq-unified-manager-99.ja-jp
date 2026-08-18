@@ -15,6 +15,7 @@ Storage Virtual Machine ピアの作成ウィザードでは、パートナー�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * 関連付ける Storage VM がすでに存在している必要があります。
@@ -23,6 +24,7 @@ Storage Virtual Machine ピアの作成ウィザードでは、パートナー�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 すべてのソース Storage VM と関係タイプについて、各デスティネーションクラスタでデスティネーション Storage VM を 1 つだけ選択できます。
@@ -31,6 +33,7 @@ Storage Virtual Machine ピアの作成ウィザードでは、パートナー�
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Protection * > * Storage VM Peers * をクリックします。

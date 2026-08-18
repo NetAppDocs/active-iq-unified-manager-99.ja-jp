@@ -15,6 +15,7 @@ Unified Manager は、 Red Hat Enterprise Linux または CentOS の物理プラ
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Unified Manager をインストールするシステムがシステムおよびソフトウェアの要件を満たしている必要があります。
@@ -31,12 +32,14 @@ xref:reference-red-hat-and-centos-software-and-installation-requirements.adoc[Re
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 Red Hat Enterprise Linux または CentOS のシステムには、必要なサポートソフトウェア（ Java 、 MySQL 、追加ユーティリティ）のすべてのバージョンがインストールされているか、必要なソフトウェアの一部のみがインストールされているか、または新たにインストールしたシステムに必要なソフトウェアがインストールされていない可能性があります。
 
 
 
+[[steps]]
 == 手順
 
 . Unified Manager をインストールするサーバにログインします。
@@ -146,6 +149,7 @@ Log in to Unified Manager in a web browser by using following details:
 
 
 
+[[after-you-finish]]
 == 完了後
 
 の説明に従って、 Web UI にアクセスして umadmin ユーザのデフォルトパスワードを変更し、 Unified Manager の初期セットアップを実行します link:../config/task-using-the-maintenance-console.html["メンテナンスコンソールを使用する"]。

@@ -25,12 +25,14 @@ MBpsグラフには、次の2つのタイプがあります。
 
 
 
+[[mbs-total-counter-chart]]
 == MBps -合計カウンタチャート
 
 選択したオブジェクトとの間で転送された1秒あたりのデータのメガバイト数が表示されます。
 
 
 
+[[mbs-breakdown-counter-chart]]
 == MBps -内訳カウンタグラフ
 
 同じMBpsデータが、ディスク読み取り、Flash Cache読み取り、書き込み、その他の処理に分けて表示されます。
@@ -44,6 +46,7 @@ Flash Cache のデータは、ノードに Flash Cache モジュールがイン�
 ====
 
 
+[[zoom-view-button]]
 == *ズーム表示*ボタン
 
 カウンタグラフのデータが拡大表示されます。

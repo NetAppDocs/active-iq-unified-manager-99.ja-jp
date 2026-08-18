@@ -19,6 +19,7 @@ Qtree Thresholdsページでは、監視対象のqtreeのグローバル容量�
 
 
 
+[[capacity-area]]
 == 容量領域
 
 容量領域では、qtreeの容量について、次のしきい値条件を設定できます。

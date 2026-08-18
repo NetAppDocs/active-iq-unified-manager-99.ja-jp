@@ -15,6 +15,7 @@ MetroCluster 構成の接続の問題を監視することができます。ク�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * MetroCluster 構成のローカルクラスタとリモートクラスタの両方を Active IQ Unified Manager に追加する必要があります。
@@ -23,6 +24,7 @@ MetroCluster 構成の接続の問題を監視することができます。ク�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 クラスタ / 健全性の詳細ページに表示される情報を基に、接続の問題を修正できます。たとえば、クラスタ内のノードとスイッチの間の接続が停止している場合は、次のアイコンが表示されます。
@@ -37,6 +39,7 @@ MetroCluster 接続タブは、 MetroCluster 構成のクラスタに対して�
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage * > * Clusters * をクリックします。
@@ -52,6 +55,7 @@ MetroCluster 接続タブは、 MetroCluster 構成のクラスタに対して�
 
 
 
+[[after-you-finish]]
 == 完了後
 
 MetroCluster 構成で接続の問題が見つかった場合は、 System Manager にログインするか ONTAP CLI にアクセスして問題を解決する必要があります。

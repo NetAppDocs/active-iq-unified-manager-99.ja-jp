@@ -15,18 +15,21 @@ Unified Manager がインストールされている Linux サーバで OpenJDK 
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 Unified Manager がインストールされている Linux システムに対する root 権限が必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 OpenJDK のリリースはリリースファミリー内で更新できます。たとえば、OpenJDK 11.0.7からOpenJDK 11.0.9にアップグレードできますが、OpenJDK 11からOpenJDK 12に直接更新することはできません。
 
 
 
+[[steps]]
 == 手順
 
 . Unified Manager ホストマシンに root ユーザとしてログインします。

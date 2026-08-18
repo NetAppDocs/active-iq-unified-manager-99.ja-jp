@@ -15,12 +15,14 @@ Unified Manager をインストールする前にカスタムのホームディ�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 Unified Manager の標準のアンインストール手順では、カスタムの umadmin ユーザと maintenance アカウントは削除されません。これらの項目は手動で削除する必要があります。
 
 
 
+[[steps]]
 == 手順
 
 . Red Hat Enterprise Linux サーバに root ユーザとしてログインします。

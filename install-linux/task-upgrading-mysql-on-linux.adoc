@@ -15,18 +15,21 @@ Unified Manager がインストールされている Linux サーバで MySQL �
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 Unified Manager がインストールされている Linux システムに対する root 権限が必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 MySQL 8.0.25 の基本バージョンを新しいバージョンにアップグレードできるのは、マイナーアップデートのみです。
 
 
 
+[[steps]]
 == 手順
 
 . Unified Manager ホストマシンに root ユーザとしてログインします。

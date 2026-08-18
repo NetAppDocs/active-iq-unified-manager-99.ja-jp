@@ -15,6 +15,7 @@ summary: クラスタ、ボリューム、およびStorage Virtual Machine（SVM
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage Management * > * Annotations * をクリックします。

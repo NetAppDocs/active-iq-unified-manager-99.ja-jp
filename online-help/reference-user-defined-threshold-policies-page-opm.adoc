@@ -17,6 +17,7 @@ Performance Thresholdsページを使用すると、現在定義されている�
 
 
 
+[[filter-and-search-bar]]
 == フィルタと検索バー
 
 [*Filtering*]ボタンを使用すると、特定の条件に一致するポリシーのみを表示して、しきい値ポリシーのリストを絞り込むことができます。
@@ -25,6 +26,7 @@ Performance Thresholdsページを使用すると、現在定義されている�
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 * * 作成 * 。
@@ -47,6 +49,7 @@ Performance Thresholdsページを使用すると、現在定義されている�
 
 
 
+[[threshold-policies-list]]
 == しきい値ポリシーのリスト
 
 * * ポリシー名 *

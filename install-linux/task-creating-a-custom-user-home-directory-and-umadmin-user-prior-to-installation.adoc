@@ -15,6 +15,7 @@ Unified Manager をインストールする前に、カスタムのホームデ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * に記載されたシステム要件を満たしている必要があります xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[ハードウェアシステムの要件]。
@@ -23,6 +24,7 @@ Unified Manager をインストールする前に、カスタムのホームデ�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 Unified Manager のインストール時、デフォルト設定では次のタスクが実行されます。
@@ -43,6 +45,7 @@ Unified Manager のインストール時、デフォルト設定では次のタ�
 
 
 
+[[steps]]
 == 手順
 
 . サーバに root ユーザとしてログインします。
@@ -56,6 +59,7 @@ umadmin ユーザの新しいパスワードの文字列を入力するように
 
 
 
+[[after-you-finish]]
 == 完了後
 
 Unified Manager のインストールが完了したら、 umadmin ユーザのログインシェルを指定する必要があります。

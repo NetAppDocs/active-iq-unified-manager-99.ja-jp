@@ -15,6 +15,7 @@ Unified Manager をインストールするシステムが MySQL Community Editi
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 MySQL リポジトリリポジトリリポジトリは、システムにインストールする必要がある MySQL ソフトウェアへのアクセスを提供します。
@@ -26,6 +27,7 @@ MySQL リポジトリリポジトリリポジトリは、システムにイン�
 ====
 
 
+[[steps]]
 == 手順
 
 . インストールに対応する MySQL リポジトリをダウンロードします。Red Hat Enterprise Linux 7 の場合は、次のサイトからダウンロードしてください。 `+wget http://repo.mysql.com/yum/mysql-8.0-community/el/7/x86_64/mysql80-community-release-el7-3.noarch.rpm+` バージョン 8 については、次のサイトからダウンロードしてください。 `+wget http://repo.mysql.com/yum/mysql-8.0-community/el/8/x86_64/mysql80-community-release-el8-1.noarch.rpm+`
@@ -34,6 +36,7 @@ MySQL リポジトリリポジトリリポジトリは、システムにイン�
 
 
 
+[[after-you-finish]]
 == 完了後
 
 Red Hat Enterprise Linux 8 システムの場合、 AppStream リポジトリから提供される Java -11 openjdk 、 p7zip 、およびその他のソフトウェアパッケージを含む内部リポジトリがある場合、 AppStream リポジトリを無効にして MySQL Community Server をインストールする必要があります。次のコマンドを実行します。

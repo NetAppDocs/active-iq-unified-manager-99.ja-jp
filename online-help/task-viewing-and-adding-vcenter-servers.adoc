@@ -15,6 +15,7 @@ summary: 仮想マシン（VM\）のパフォーマンスの表示とトラブ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 vCenter Server を追加または表示する前に、次の点を確認してください。
@@ -33,12 +34,14 @@ vCenter Server を追加または表示する前に、次の点を確認して�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 Unified Manager は、追加されて検出されたすべての vCenter Server について、 vCenter Server と ESXi サーバの詳細、 ONTAP マッピング、データストアの詳細、ホストされている VM の数などの構成データを収集します。さらに、コンポーネントのパフォーマンス指標も収集されます。
 
 
 
+[[steps]]
 == 手順
 
 . 「 * vmware * > * vcenter * 」に移動して、 vCenter Server がリストに表示されているかどうかを確認します。
@@ -82,6 +85,7 @@ vCenter Server を追加すると、次のステータスが表示されます�
 
 
 
+[[results]]
 == 結果
 
 * vCenter Server のデータ収集を開始します

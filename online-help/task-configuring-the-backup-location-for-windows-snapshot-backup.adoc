@@ -15,6 +15,7 @@ Windows に Active IQ Unified Manager がインストールされている場合
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 クラスタ、 Storage VM 、およびボリュームが次の要件を満たしている必要があります。

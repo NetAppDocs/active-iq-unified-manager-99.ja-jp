@@ -15,6 +15,7 @@ Unified Manager でリモートユーザの認証に使用するアイデンテ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * IdP の URL とメタデータが必要です。
@@ -23,12 +24,14 @@ Unified Manager でリモートユーザの認証に使用するアイデンテ�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 新しい IdP の設定は、 Unified Manager の設定前にも設定後にも実行できます。
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * General * > * SAML Authentication * をクリックします。
@@ -46,6 +49,7 @@ Unified Manager サーバから IdP に直接アクセスできる場合は、 I
 
 
 
+[[after-you-finish]]
 == 完了後
 
 新しい IdP にアクセスし、 Unified Manager サーバの URI とメタデータを入力して設定を完了します。

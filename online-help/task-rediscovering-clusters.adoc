@@ -15,6 +15,7 @@ summary: クラスタを手動で再検出することで、クラスタの健�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 クラスタを更新する場合は、スペースが不足しているときにアグリゲートのサイズを拡張するなど、クラスタを手動で再検出できます。変更を検出するには、 Unified Manager で検出します。
@@ -23,6 +24,7 @@ Unified Manager と OnCommand Workflow Automation （ WFA ）を連携させて�
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage Management * > * Cluster Setup * をクリックします。

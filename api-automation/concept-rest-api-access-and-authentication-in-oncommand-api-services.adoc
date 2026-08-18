@@ -15,6 +15,7 @@ Active IQ Unified Manager REST API には、問題 HTTP 要求を実行できる
 
 
 
+[[rest-access]]
 == REST アクセス
 
 問題 HTTP 要求を使用して Unified Manager REST API にアクセスできる Web ブラウザまたはプログラミングプラットフォームを使用できます。たとえば、 Unified Manager にログインしたあと、任意のブラウザで URL を入力して、管理ステーション名、キー、 IP アドレスなど、すべての管理ステーションの属性を取得できます。
@@ -104,6 +105,7 @@ Web ブラウザから問題 POST 、 PATCH 、および DELETE の各 HTTP 要�
 
 
 
+[[authentication]]
 == 認証
 
 Unified Manager では、 API の基本的な HTTP 認証方式がサポートされます。情報の流れ（要求と応答）をセキュリティで保護するために、 REST API には HTTPS 経由でのみアクセスできます。API サーバは、サーバ検証のためにすべてのクライアントに自己署名 SSL 証明書を提供します。この証明書は、カスタム証明書（または CA 証明書）で置き換えることができます。

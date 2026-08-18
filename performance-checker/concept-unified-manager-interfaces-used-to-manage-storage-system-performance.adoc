@@ -15,6 +15,7 @@ Active IQ Unified Manager では、データストレージのパフォーマン
 
 
 
+[[unified-manager-web-ui]]
 == Unified Manager Web UI
 
 Unified Manager Web UI では、ストレージシステムのパフォーマンスに関連する問題を監視し、トラブルシューティングを実行できます。
@@ -23,6 +24,7 @@ Unified Manager Web UI では、ストレージシステムのパフォーマン
 
 
 
+[[maintenance-console]]
 == メンテナンスコンソール
 
 メンテナンスコンソールでは、管理者が Unified Manager サーバ自体に関連するオペレーティングシステムの問題、バージョンアップグレードの問題、ユーザアクセスの問題、およびネットワークの問題を監視し、診断し、対処することができます。Unified Manager Web UI を使用できない場合は、メンテナンスコンソールが Unified Manager にアクセスする唯一の手段となります。

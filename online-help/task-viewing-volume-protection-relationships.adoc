@@ -15,18 +15,21 @@ Relationship ： All Relationships ビューと Volume Relationships ページ�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 アプリケーション管理者またはストレージ管理者のロールが必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 このページから、関係に関するコマンドを開始することもできます。
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage * > * Volumes * をクリックします。

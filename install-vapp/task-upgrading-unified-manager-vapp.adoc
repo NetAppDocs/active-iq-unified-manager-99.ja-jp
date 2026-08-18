@@ -15,6 +15,7 @@ Unified Manager 9.9にアップグレードできるのは、9.7または9.8の�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 アップグレードプロセスの実行中は、 Unified Manager を使用できなくなります。実行中の処理がある場合は、 Unified Manager をアップグレードする前に完了しておいてください

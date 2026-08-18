@@ -15,18 +15,21 @@ Health ： All Storage VM ビューで、 Storage Virtual Machine （ SVM ）の
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 オペレータ、アプリケーション管理者、またはストレージ管理者のロールが必要です。
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 SVM の容量、効率、構成など、 SVM の詳細を表示できます。また、その SVM に関連するデバイスやアラートに関する情報も参照できます。
 
 
 
+[[steps]]
 == 手順
 
 . 左側のナビゲーションペインで、 * Storage * > * Storage VM* をクリックします。

@@ -15,6 +15,7 @@ summary: データ損失やデータ破損が発生した場合、リストア�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * Windows の管理者権限が必要です。
@@ -27,6 +28,7 @@ summary: データ損失やデータ破損が発生した場合、リストア�
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 リストア機能は、プラットフォームおよびバージョンに固有の機能です。Unified Manager の MySQL バックアップは、同じバージョンの Unified Manager にのみリストアできます。また、 Windows のバックアップは、 Windows プラットフォームにのみリストアできます。
@@ -38,6 +40,7 @@ summary: データ損失やデータ破損が発生した場合、リストア�
 ====
 
 
+[[steps]]
 == 手順
 
 . 新しいサーバへのリストアを実行する場合は、 Unified Manager のインストールの完了後に、 UI を起動したり、クラスタ、ユーザ、または認証設定を設定したりしないでください。この情報は、リストアプロセスでバックアップファイルに取り込まれます。
@@ -59,6 +62,7 @@ Bundle to restore from: \ProgramData\NetApp\OnCommandAppData\ocum\backup\UM_9.8.
 
 
 
+[[after-you-finish]]
 == 完了後
 
 バックアップをリストアしたあとに OnCommand Workflow Automation サーバが動作しない場合は、次の手順を実行します。

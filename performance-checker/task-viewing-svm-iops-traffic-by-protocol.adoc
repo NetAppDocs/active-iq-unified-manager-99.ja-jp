@@ -15,6 +15,7 @@ Performance/SVMExplorer ヘエシを使用すると、 SVM の詳細な IOPS 情
 
 
 
+[[about-this-task]]
 == このタスクについて
 
 また、 IOPS - プロトコルグラフには、 SVM で使用されている各プロトコルの IOPS トラフィックの詳細な比較が表示されます。使用できるプロトコルは次のとおりです。
@@ -28,6 +29,7 @@ Performance/SVMExplorer ヘエシを使用すると、 SVM の詳細な IOPS 情
 
 
 
+[[steps]]
 == 手順
 
 . 選択した SVM の * パフォーマンス / SVM エクスプローラ * ページで、 IOPS チャートから、ドロップダウンメニューから * プロトコル * を選択します。

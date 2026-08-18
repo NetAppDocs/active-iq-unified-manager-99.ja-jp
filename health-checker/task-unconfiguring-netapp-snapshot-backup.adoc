@@ -15,12 +15,14 @@ Active IQ Unified Manager システムのバックアップタイプを変更す
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 Unified Manager サーバのメンテナンスコンソールへのログインが許可されているユーザ ID とパスワードが必要です。
 
 
 
+[[steps]]
 == 手順
 
 . メンテナンスコンソールにアクセスします

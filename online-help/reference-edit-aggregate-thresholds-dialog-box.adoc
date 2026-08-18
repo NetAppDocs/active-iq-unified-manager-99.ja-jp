@@ -24,6 +24,7 @@ Edit Aggregate Thresholdsダイアログボックスでは、選択したアグ�
 ====
 
 
+[[capacity-area]]
 == 容量領域
 
 容量領域では、アグリゲートの容量について、次のしきい値条件を設定できます。
@@ -58,6 +59,7 @@ Edit Aggregate Thresholdsダイアログボックスでは、選択したアグ�
 
 
 
+[[growth-area]]
 == 成長領域
 
 Growth領域では、アグリゲートの増加率について、次のしきい値条件を設定できます。
@@ -83,6 +85,7 @@ Growth領域では、アグリゲートの増加率について、次のしき�
 
 
 
+[[snapshot-copies-area]]
 == Snapshotコピー領域
 
 Snapshotコピー領域では、Snapshotリザーブについて、次のしきい値条件を設定できます。
@@ -98,6 +101,7 @@ Snapshotコピー領域では、Snapshotリザーブについて、次のしき�
 
 
 
+[[command-buttons]]
 == コマンドボタン
 
 選択したアグリゲートについて、各コマンドボタンを使用して次のタスクを実行できます。

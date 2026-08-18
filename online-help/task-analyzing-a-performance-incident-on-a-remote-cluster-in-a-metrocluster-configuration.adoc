@@ -15,6 +15,7 @@ Unified Manager を使用して、 MetroCluster 構成のリモートクラス�
 
 
 
+[[before-you-begin]]
 == 作業を開始する前に
 
 * オペレータ、アプリケーション管理者、またはストレージ管理者のロールが必要です。
@@ -24,6 +25,7 @@ Unified Manager を使用して、 MetroCluster 構成のリモートクラス�
 
 
 
+[[steps]]
 == 手順
 
 . パートナークラスタを監視している Unified Manager インスタンスにログインします。
